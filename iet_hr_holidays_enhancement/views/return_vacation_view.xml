@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="return_vacation_tree" model="ir.ui.view">
+            <field name="name">return.vacation.tree</field>
+            <field name="model">return.vacation</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="employee_id"/>
+                    <field name="leave_id"/>
+                    <field name="time_off_type_id"/>
+                    <field name="return_date"/>
+                    <field name='state' widget="badge" decoration-success="state == 'approved'"
+                           decoration-info="state == 'draft'"
+                           decoration-primary="state == 'submit'"
+                           decoration-muted="state == 'cancel'"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="return_vacation_form" model="ir.ui.view">
+            <field name="name">return.vacation.form</field>
+            <field name="model">return.vacation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_submit" type="object" string="Submit" class="oe_highlight"
+                                invisible="state != 'draft'"
+                        />
+                        <button name="action_manager_approve" type="object" string="Approve" class="oe_highlight"
+                                invisible="state != 'submit'" groups="iet_hr_employee_enhancement.group_general_manager"
+                        />
+                        <button name="action_cancel" type="object" string="Cancel"
+                                invisible="state != 'draft','refuse', 'cancel', 'approved'"
+                        />
+
+                        <button name="action_reset_to_draft" type="object" string="Reset To Draft"
+                                invisible="state == 'draft'"
+                        />
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,submit,approved"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="employee_id" required="1" readonly="state != 'draft'"/>
+                                <field name="department_id"/>
+                                <field name="leave_id" required="1" readonly="state != 'draft'"/>
+                                <field name="time_off_type_id"/>
+                            </group>
+                            <group>
+                                <field name="expected_return_date" string="Expected Return Date"/>
+                                <field name="return_date" readonly="state != 'draft'" required="0" force_save="1"/>
+                                <field name="difference_of_days"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="description" required="0"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="action_return_vacation" model="ir.actions.act_window">
+            <field name="name">Return From Vacation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">return.vacation</field>
+            <field name="view_mode">list,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your First Return From Vacation !
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_return_vacation_id" name=" Return From Vacation"
+                  parent="hr_holidays.menu_hr_holidays_management" action="action_return_vacation" sequence="100"/>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_resignation_request,resignation.request,model_resignation_request,base.group_user,1,1,1,1
+clearance,clearance,model_clearance,base.group_user,1,1,1,1
+employee_clearance,employee_clearance,model_employee_clearance,base.group_user,1,1,1,1
+employee_clearance_line,employee_clearance_line,model_employee_clearance_line,base.group_user,1,1,1,1

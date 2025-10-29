@@ -1,0 +1,224 @@
+<odoo>
+    <data>
+
+        <record id="clearance_view_search" model="ir.ui.view">
+            <field name="name">clearance.view.search</field>
+            <field name="model">clearance</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_number"/>
+                    <field name="identification_number"/>
+                    <field name="job_position"/>
+<!--                    <field name="active"/>-->
+<!--                    <filter string="Archived" name="active" domain="[('active', '=', False)]"/>-->
+                    <group expand="0" string="Group By">
+                        <filter string="Employee" name="employee_id" context="{'group_by': 'employee_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="clearance_view_form" model="ir.ui.view">
+            <field name="name">Clearance View Form</field>
+            <field name="model">clearance</field>
+            <field name="arch" type="xml">
+                <form string="clearance_form">
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,approved,cancel"/>
+                        <button name="action_submit" string="Submit" type="object" class="oe_highlight"
+                                groups="hr.group_hr_user" invisible="state != 'draft'"/>
+                        <button name="action_cancel" string="Cancel" type="object" class="btn-secondary"
+                                invisible="state in ('draft', 'cancel')"/>
+                        <button name="action_set_to_draft" string="Reset To Draft" type="object" class="btn-secondary"
+                                invisible="state != 'cancel'"/>
+                        <button name="action_finance_approve" string="Finance Approval" type="object"
+                                class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_finance_manager"
+                                invisible="state != 'finance_approval'"/>
+                        <button name="action_it_approval" string="IT approval" type="object" class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_it_manager"
+                                invisible="state != 'it_approval'"/>
+                        <button name="action_sales_approval" string="Sales Approval" type="object"
+                                class="oe_highlight" groups="iet_hr_employee_enhancement.group_sales_manager"
+                                invisible="state != 'sales_approval'"/>
+                        <button name="action_inventory_approval" string="Inventory Approval" type="object"
+                                class="oe_highlight" groups="iet_hr_employee_enhancement.group_inventory_manager"
+                                invisible="state != 'inventory_approval'"/>
+                        <button name="action_hr_approval" string="HR Approval" type="object"
+                                class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_hr_officer,iet_hr_employee_enhancement.group_hr_manager"
+                                invisible="state != 'hr_approval'"/>
+                    </header>
+                    <sheet>
+                        <div name="button_box">
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_time_off"
+                                    icon="fa-retweet">
+                                <field string="Time Off" name="time_off_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_resignation_request"
+                                    icon="fa-retweet">
+                                <field string="Resignation Request" name="resignation_request_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_payslip"
+                                    icon="fa-retweet">
+                                <field string="Payslips" name="payslips_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_equipment"
+                                    icon="fa-retweet">
+                                <field string="Equipment" name="equipment_count" widget="statinfo"/>
+                            </button>
+                            <!--                            <button class="oe_stat_button" type="object"-->
+                            <!--                                    name="action_view_loans"-->
+                            <!--                                    icon="fa-retweet">-->
+                            <!--                                <field string="Loans" name="salary_advance_count" widget="statinfo"/>-->
+                            <!--                            </button>-->
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_employee_clearance"
+                                    icon="fa-retweet">
+                                <field string="Employee Clearance" name="employee_clearance_count" widget="statinfo"/>
+                            </button>
+                            <button class="oe_stat_button" type="object"
+                                    name="action_view_flight_tickets"
+                                    icon="fa-retweet">
+                                <field string="Flight Tickets" name="flight_tickets_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <h1 class="d-flex flex-row align-items-center">
+                            <field name="name" placeholder="Name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="employee_id"/>
+                                <field name="employee_number"/>
+                                <field name="date"/>
+                                <field name="application_type"/>
+                                <field name="hire_date"/>
+                                <field name="last_working_date"/>
+                                <field name="last_return_date"/>
+                                <field name="service_period_2" string="Service Period"/>
+                            </group>
+                            <group>
+                                <field name="job_position"/>
+                                <field name="nationality"/>
+                                <field name="identification_number"/>
+                                <field name="location"/>
+
+                                <field name="entitlement_of_annual_leave"
+                                       invisible="application_type != 'annual_leave'"/>
+                                <field name="balance_leave_2" invisible="application_type != 'annual_leave'"/>
+                                <field name="leave_balance_amount" invisible="application_type != 'annual_leave'"/>
+                                <field name="leave_start_date" invisible="application_type != 'annual_leave'"/>
+                                <field name="leave_return_date" invisible="application_type != 'annual_leave'"/>
+                                <field name="annual_leave_id" invisible="application_type != 'annual_leave'"
+                                       readonly="1"/>
+                                <field name="leave_duration" invisible="application_type != 'annual_leave'"/>
+                                <field name="unpaid_leave_days" invisible="application_type != 'annual_leave'"/>
+
+                                <field name="departure_reason" invisible="application_type != 'end_of_service'"/>
+                                <field name="reason_of_the_end_of_contract"
+                                       invisible="application_type != 'end_of_service'"/>
+                                <field name="start_notice_period" invisible="application_type != 'end_of_service'"/>
+                                <field name="end_notice_period" invisible="application_type != 'end_of_service'"/>
+                                <field name="additional_information" invisible="application_type != 'end_of_service'"/>
+                                <field name="departure_date" invisible="application_type != 'end_of_service'"/>
+                                <field name="duration" invisible="application_type != 'end_of_service'"/>
+                                <field name="resignation_request_id" invisible="application_type != 'end_of_service'"
+                                       readonly="1"/>
+
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+
+                </form>
+            </field>
+        </record>
+        <record id="clearance_sequence" model="ir.sequence">
+            <field name="name">Clearance</field>
+            <field name="code">clearance</field>
+            <field name="prefix">Cl/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        <record id="clearance_view_tree" model="ir.ui.view">
+            <field name="name">clearance_view_tree</field>
+            <field name="model">clearance</field>
+            <field name="arch" type="xml">
+                <list string="clearance_tree">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_number"/>
+                    <field name="state"/>
+                </list>
+            </field>
+        </record>
+        <record id="clearance_action" model="ir.actions.act_window">
+            <field name="name">Clearance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">clearance</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="clearance_employee_menu" name="Clearance"
+                  parent="menu_end_of_service_employee"
+                  action="clearance_action" sequence="1"/>
+
+        <menuitem id="clearance_time_off_menu" name="Clearance"
+                  parent="menu_end_of_service_time_off"
+                  action="clearance_action" sequence="1"/>
+
+        <record id="employee_clearance_view_form" model="ir.ui.view">
+            <field name="name">employee_clearance_view_form</field>
+            <field name="model">employee.clearance</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="employee_id"/>
+                            </group>
+                            <group>
+                                <field name="date_of_application"/>
+                            </group>
+                            <field name="employee_clearance_ids">
+                                <list>
+                                    <field name="operating_unit"/>
+                                    <field name="actions_required"/>
+                                    <field name="actions_confirmation"/>
+                                    <field name="carried_out_by"/>
+                                    <field name="Date"/>
+                                    <field name="notes"/>
+                                </list>
+                            </field>
+                        </group>
+                    </sheet>
+                    <chatter/>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="employee_clearance_view_tree" model="ir.ui.view">
+            <field name="name">employee_clearance_view_tree</field>
+            <field name="model">employee.clearance</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="date_of_application"/>
+
+                </list>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

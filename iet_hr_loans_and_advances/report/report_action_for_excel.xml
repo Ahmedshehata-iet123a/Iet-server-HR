@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="action_loans_report_excel_report" model="ir.actions.report">
+      <field name="name">Loans Report Excel</field>
+      <field name="model">loans</field>
+      <field name="report_type">xlsx</field>
+      <field name="report_name">iet_hr_loans_and_advances.loans_report_excel</field>
+      <field name="report_file">iet_hr_loans_and_advances.loans_report_excel</field>
+      <field name="binding_model_id" ref="model_loans"/>
+      <field name="binding_type">report</field>
+    </record>
+
+  </data>
+</odoo>

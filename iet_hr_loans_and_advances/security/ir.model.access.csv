@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_loans_loans,loans.loans,model_loans,,1,1,1,1
+access_salary_advance,salary.advance,model_salary_advance,,1,1,1,1
+access_loans_loans_line,loans.loans_line,model_loans_line,,1,1,1,1
+access_housing_advance,housing_advance,model_housing_advance,,1,1,1,1
+access_housing_advance_line,housing_advance_line,model_housing_advance_line,,1,1,1,1
+access_type_loan_advance,loans.type_loan_advance,model_type_loan_advance,,1,1,1,1

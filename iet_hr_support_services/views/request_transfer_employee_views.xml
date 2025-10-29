@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <record id="request_transfer_employee_view_search" model="ir.ui.view">
+            <field name="name">request_transfer_employee.search.view</field>
+            <field name="model">request.transfer.employee</field>
+            <field name="arch" type="xml">
+                <search string="Request Transfer Employee">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code"/>
+                    <field name="request_date"/>
+                    <field name="request_date"/>
+                    <field name="current_branch"/>
+                    <field name="reason"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="request_transfer_employee_view_form" model="ir.ui.view">
+            <field name="name">request_transfer_employee_view_form</field>
+            <field name="model">request.transfer.employee</field>
+            <field name="arch" type="xml">
+                <form string="Request To Transfer Employee">
+                    <header>
+                        <button name="action_submit" type="object" string="Submit" class="oe_highlight"
+                                invisible="state != 'draft'"/>
+                        <button name="action_department_manager_approval" type="object"
+                                string="Department Manager Approve" class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_department_manager"
+                                invisible="state != 'department_manager_approval'"/>
+                        <button name="action_hr_approval" type="object" string="HR Approve" class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_hr_officer, iet_hr_employee_enhancement.group_hr_manager"
+                                invisible="state != 'hr_approval'"/>
+                        <button name="action_hr_reject" type="object" string="Reject" class="btn-secondary"
+                                invisible="state == 'reject'"/>
+                        <button name="action_cancel" type="object" string="Cancel" class="btn-secondary"
+                                invisible="state != 'done'"/>
+                        <button name="action_reset_to_draft" type="object" string="Reset to draft" class="btn-secondary"
+                                invisible="state != 'reject'"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done,reject,cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="sequence" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name" readonly="state != 'draft'"/>
+                                <field name="employee_id" readonly="state != 'draft'"/>
+                                <field name="employee_code"/>
+                                <field name="request_date" readonly="state != 'draft'"/>
+                            </group>
+                            <group>
+                                <field name="old_branch" readonly="1"/>
+                                <field name="current_branch"/>
+                                <field name="new_branch" invisible="state == 'done'"/>
+                                <field name="reason" readonly="state != 'draft'"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="request_transfer_employee_view_tree" model="ir.ui.view">
+            <field name="name">request_transfer_employee_view_tree</field>
+            <field name="model">request.transfer.employee</field>
+            <field name="arch" type="xml">
+                <list string="Request To Transfer Employee">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code"/>
+                    <field name="request_date"/>
+                    <field name="request_date"/>
+                    <field name="current_branch"/>
+                    <field name="reason"/>
+                    <field name="state"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="request_transfer_employee_action" model="ir.actions.act_window">
+            <field name="name">Request To Transfer Employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">request.transfer.employee</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No Request To Transfer Employee
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

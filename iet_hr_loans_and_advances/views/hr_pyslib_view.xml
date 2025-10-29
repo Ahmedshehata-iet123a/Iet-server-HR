@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+
+        <record id="id_hr_payslip_inherit_form" model="ir.ui.view">
+            <field name="name">hr.payslip.inh</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Loans" name="loans">
+                        <field name="loans_line_ids" readonly="1" nolabel="1" force_save="1">
+                            <list>
+                                <field name="name"/>
+                                <field name="amount"/>
+                            </list>
+                        </field>
+                        <group>
+                            <group>
+
+                            </group>
+                            <group>
+                                <field name="loans" string="Total Loans"/>
+                                <field name="total_unpaid_loans"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <!-- Add your fields or attributes here -->
+                    <page string="Salary Advance" name="salary_advance">
+                        <field name="salary_advance_ids" readonly="1" nolabel="1">
+                            <list>
+                                <field name="deduction_date"/>
+                                <field name="employee_id"/>
+                                <field name="department_id"/>
+                                <field name="amount"/>
+                                <field name="state"/>
+                            </list>
+                        </field>
+                        <group>
+                            <group>
+
+                            </group>
+                            <group>
+                                <field name="salary_advance" string="Total Salary Advance"/>
+                            </group>
+                        </group>
+                    </page>
+
+                </xpath>
+                <xpath expr="//notebook" position="inside">
+                    <page string="Housing Advance" name="housing_advance">
+                        <field name="housing_advance_lines_ids" readonly="1" nolabel="1" force_save="1">
+                            <list>
+                                <field name="name"/>
+                                <field name="amount"/>
+                            </list>
+                        </field>
+                        <group>
+                            <group>
+
+                            </group>
+                            <group>
+                                <field name="housing_advance" string="Total Housing Advance"/>
+                                <field name="total_unpaid_housing_advance"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="id_account_journal_inherit_form" model="ir.ui.view">
+            <field name="name">id account journal inherit form</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='type']" position="after">
+                    <!-- Add your fields or attributes here -->
+                    <field name="is_loan" invisible="1"/>
+                    <field name="is_salary_advance" invisible="1"/>
+                    <field name="account_ids" invisible="0"/>
+                    <field name="account_idd" invisible="0"/>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+
+</odoo>

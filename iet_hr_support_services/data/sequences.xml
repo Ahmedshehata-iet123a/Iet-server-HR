@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+
+       <record id="sequence_request_transfer_employee" model="ir.sequence">
+           <field name="name">sequence_request_transfer_employee</field>
+           <field name="code">request.transfer.employee.seq.code</field>
+           <field name="prefix">RTE</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+        <record id="sequence_assignment_external_work" model="ir.sequence">
+           <field name="name">sequence_assignment_external_work</field>
+           <field name="code">assignment.external.work.seq.code</field>
+           <field name="prefix">AEW</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_specify_letter" model="ir.sequence">
+           <field name="name">sequence_request_specify_letter</field>
+           <field name="code">request.specify.letter.seq.code</field>
+           <field name="prefix">RSL</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+
+       <record id="sequence_request_document_transaction" model="ir.sequence">
+           <field name="name">sequence_request_document_transaction</field>
+           <field name="code">request.document.transaction.seq.code</field>
+           <field name="prefix">RDT</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_maintenance_devices_printers" model="ir.sequence">
+           <field name="name">sequence_request_maintenance_devices_printers</field>
+           <field name="code">request.maintenance.devices.printers.seq.code</field>
+           <field name="prefix">RMDP</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_plumbing_and_electrical" model="ir.sequence">
+           <field name="name">sequence_request_plumbing_and_electrical</field>
+           <field name="code">request.plumbing.and.electrical.seq.code</field>
+           <field name="prefix">RPE</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_change_salary_account" model="ir.sequence">
+           <field name="name">sequence_request_change_salary_account</field>
+           <field name="code">request.change.salary.account.seq.code</field>
+           <field name="prefix">RSA</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_office_supplies" model="ir.sequence">
+           <field name="name">sequence_request_office_supplies</field>
+           <field name="code">request.office.supplies.seq.code</field>
+           <field name="prefix">ROS</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+       <record id="sequence_request_others" model="ir.sequence">
+           <field name="name">sequence_request_others</field>
+           <field name="code">request.others.seq.code</field>
+           <field name="prefix">RO</field>
+           <field name="padding">5</field>
+           <field name="company_id" eval="False"/>
+       </record>
+
+   </data>
+</odoo>

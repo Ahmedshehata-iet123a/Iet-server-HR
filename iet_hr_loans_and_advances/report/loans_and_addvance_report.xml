@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record model="report.paperformat" id="loans_report_paperformat">
+      <field name="name">A4 report</field>
+      <field name="default" eval="True"/>
+      <field name="format">A4</field>
+      <field name="orientation">Portrait</field>
+      <field name="margin_top">15</field>
+      <field name="margin_bottom">15</field>
+      <field name="margin_left">3</field>
+      <field name="margin_right">3</field>
+      <field name="header_line" eval="False"/>
+      <field name="header_spacing">15</field>
+      <field name="dpi">90</field>
+    </record>
+
+    <record id="iet_hr_loans_and_advances_report_action" model="ir.actions.report">
+      <field name="name">loans Report</field>
+      <field name="model">loans</field>
+      <field name="report_type">qweb-pdf</field>
+      <field name="report_name">iet_hr_loans_and_advances.loans_report</field>
+      <field name="report_file">iet_hr_loans_and_advances.loans_report</field>
+      <field name="binding_model_id" ref="model_loans"/>
+      <field name="paperformat_id" ref="iet_hr_loans_and_advances.loans_report_paperformat"/>
+    </record>
+
+    <!--      <field name="binding_type">report</field>-->
+
+
+    <template id="loans_report">
+      <t t-call="web.html_container">
+        <t t-call="web.basic_layout">
+          <t t-foreach="docs" t-as="o">
+            <div class="page">
+              <div class="col-3 text-right" style="margin-top:22px;">
+                <img t-att-src="image_data_uri(o.company_id.logo)" style="height: 100px;width: 100%;" alt="Logo"/>
+              </div>
+              <!--              <div style="position: absolute; top:0px; left:0; margin-left:0px">-->
+              <!--                &lt;!&ndash;              <div class="col-md-10">&ndash;&gt;-->
+              <!--                <img alt="Company LOGO" src="iet_hr_loans_and_advances/static/description/logo.jpg"-->
+              <!--                     width="300" height="120"/>-->
+              <!--              </div>-->
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div style="border-bottom: 0px solid black;height: 150px;">
+                <table width="100%" class='styled-table mt-2 font_tajawal' style="direction: rtl;">
+
+                  <tr style="text-align:center">
+                    <td style="max-width: 10px;" class="text-center">
+                      <!--                    <span t-esc="date"/>-->
+                      <!--                      <h2>Name</h2>-->
+                      <h3>
+                        <span t-field="o.name"/>
+                      </h3>
+                    </td>
+                  </tr>
+                  <br/>
+                </table>
+
+                <table width="100%" class='styled-table mt-2 font_tajawal' style="border: 1px solid ;">
+                  <tr style="border: 1px solid ; height: 20px;">
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Employee
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.employee_id.name"/>
+                    </td>
+
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Department
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.department_id.name"/>
+                    </td>
+
+
+                  </tr>
+                  <tr style="border: 1px solid ; height: 20px;">
+
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Employee Number
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.barcode_for_loan"/>
+                    </td>
+
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      date
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.date"/>
+                    </td>
+                  </tr>
+                  <tr style="border: 1px solid ; height: 20px;">
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Identification No
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.identification_for_loan"/>
+                    </td>
+
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Deduction Date
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.deduction_date"/>
+                    </td>
+                  </tr>
+                  <tr style="border: 1px solid ; height: 20px;">
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Amount
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.amount"/>
+                    </td>
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      Employee Analytic
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.employees_customs_analytics_id.name"/>
+                    </td>
+                  </tr>
+                  <tr style="border: 1px solid ; height: 20px;">
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      No Of Installment
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <span t-field="o.no_of_installment"/>
+                    </td>
+                    <td class="text-left"
+                        style="border: 1px solid ;color:#2a2a2e;width: 10%; font-weight: bold; padding: 10px">
+                      <!--                      Employee Analytic-->
+                    </td>
+                    <td class="text-center"
+                        style="border: 1px solid ;width: 15%;color:#2a2a2e;">
+                      <!--                      <span t-field="o.employees_customs_analytics_id.name"/>-->
+                    </td>
+                  </tr>
+                </table>
+                <br/>
+                <br/>
+                <br/>
+                <table class='styled-table mt-2 font_tajawal'
+                       style="border-collapse: collapse;border: 2px solid #ddd;font-size:20px; width:100%;padding-top:0;margin-top:0;">
+                  <thead>
+                    <tr class="thead-light" style="padding:0px; margin:0px;border-top: 2px solid #ddd;height: 40px">
+                      <th class="text-center"
+                          style="background-color:#4472c4; color:#ffffff;width: 2%; font-weight: bold;">
+                        #
+                      </th>
+                      <th class="text-center"
+                          style="background-color:#4472c4; color:#ffffff;width: 11%; font-weight: bold;">
+                        <!--                    <br/>-->
+                        Payment Date
+                      </th>
+                      <th class="text-center"
+                          style="background-color:#4472c4; color:#ffffff;width: 11%; font-weight: bold;">
+                        <!--                    <br/>-->
+                        Delay
+                      </th>
+                      <th class="text-center"
+                          style="background-color:#4472c4; color:#ffffff;width: 11%; font-weight: bold;">
+                        <!--                    <br/>-->
+                        Amount
+                      </th>
+                      <th class="text-center"
+                          style="background-color:#4472c4; color:#ffffff;width: 11%; font-weight: bold;">
+                        <!--                    <br/>-->
+                        In Payslip
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="sale_tbody">
+                    <t t-set="subtotal_total_fees" t-value="0"/>
+                    <t t-set="i" t-value="1"/>
+                    <t t-foreach="o.loans_ids" t-as="line" style="height: 40px">
+                      <tr>
+                        <td style="background-color:#FFFFFF;text-align:center;border: 2px solid #ddd;">
+                          <span t-esc="i"/>
+                          <t t-set="i" t-value="i+1"/>
+                        </td>
+                        <td style="background-color:#FFFFFF;text-align:center;border: 2px solid #ddd;">
+                          <span t-field="line.name"/>
+                        </td>
+                        <td style="background-color:#FFFFFF;text-align:center;border: 2px solid #ddd;">
+                          <span t-field="line.delay"/>
+                        </td>
+                        <td style="background-color:#FFFFFF;text-align:center;border: 2px solid #ddd;">
+                          <span t-field="line.amount"/>
+                        </td>
+                        <td style="background-color:#FFFFFF;text-align:center;border: 2px solid #ddd;">
+                          <span t-field="line.is_paid"/>
+                        </td>
+                      </tr>
+                    </t>
+                  </tbody>
+                </table>
+                <br/>
+                <br/>
+                <br/>
+                <table style="font-size:16px; width:100%;direction: rtl;">
+                  <tr>
+                    <th class="text-center" style="color:black;background-color:#ffffff;">التشغيل</th>
+                    <th class="text-center" style="color:black;background-color:#ffffff;">مدير الموارد البشرية</th>
+                    <th class="text-center" style="color:black;background-color:#ffffff;">الحسابات</th>
+                    <th class="text-center" style="color:black;background-color:#ffffff;">المدير العام</th>
+                  </tr>
+                </table>
+              </div>
+              <!--              <div>-->
+              <!--              <t t-set="seq" t-value="1"/>-->
+              <!--              <br/>-->
+              <!--              <br/>-->
+              <!--              <br/>-->
+              <div class="footer"
+                   style="width:100%;font-family: Arial, Helvetica, sans-serif;direction: rtl;">
+                <div class="mt-2 text-center" style="background-color:#808080;color:#fff;">
+                  <ul class="list-inline mb4 text-nowrap">
+                    <li>
+                      <span t-esc="date_now"/>
+                    </li>
+                  </ul>
+                </div>
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                  Page:
+                  <li class="list-inline-item">
+                    <strong>
+                      <span class="page"/>
+                      /
+                      <span class="topage"/>
+                    </strong>
+                  </li>
+                </div>
+              </div>
+              <!--              </div>-->
+
+
+            </div>
+          </t>
+        </t>
+      </t>
+    </template>
+
+  </data>
+</odoo>

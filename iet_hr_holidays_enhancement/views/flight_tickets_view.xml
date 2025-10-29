@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+        <record id="flight_tickets_view_form" model="ir.ui.view">
+            <field name="name">flight_tickets_view_form</field>
+            <field name="model">flight.tickets</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_submit" type="object" string="SUBMIT" class="oe_highlight"
+                                invisible="state != 'draft'"
+                        />
+                        <button name="action_approve" type="object" string="Approve" class="oe_highlight"
+                                invisible="state != 'submit'"
+                        />
+                        <button name="action_refuse" type="object" string="Refuse" class="oe_highlight"
+                                invisible="state != 'submit'"
+                        />
+                        <button name="action_draft" type="object" string="Reset to draft" class="oe_highlight"
+                                invisible="state == 'draft'"
+                        />
+
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <h1 class="d-flex flex-row align-items-center">
+                            <field name="name" placeholder="Name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="employee_id"/>
+                                <field name="booked_by" widget="selection"/>
+                                <field name="flight_for" widget="selection"/>
+                                <field name="number_of_tickets_contract"/>
+                                <field name="number_of_tickets"/>
+                                <field name="available_tickets"/>
+                                <field name="flight_date"/>
+                                <field name="trip_type" widget="selection"/>
+
+                            </group>
+                            <group>
+                                <field name="initial_flight_type" widget="selection"/>
+                                <field name="departure_airport"/>
+                                <field name="Arrival_airport"/>
+                                <field name="flight_ticket_cost"/>
+                                <field name="employees_contribution_to_the_flight_ticket"/>
+                                <field name="visa_period"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+
+                </form>
+            </field>
+        </record>
+        <record id="flight_tickets_action" model="ir.actions.act_window">
+            <field name="name">Flight Tickets And Visa Request</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">flight.tickets</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem id="flight_tickets_menu_item" name="Flight Tickets And Visa Request" parent="hr_holidays.menu_hr_holidays_management"
+                  action="flight_tickets_action"
+                  sequence="2"/>
+
+        <record id="flight_tickets_sequence" model="ir.sequence">
+            <field name="name">Flight Tickets</field>
+            <field name="code">flight.tickets</field>
+            <field name="prefix">FLY/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

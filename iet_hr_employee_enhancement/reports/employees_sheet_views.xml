@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="employee_excel_action" model="ir.actions.report">
+            <field name="name">Employee Report</field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">xlsx</field>
+            <field name="report_name">iet_hr_employee_enhancement.employee_report_excel</field>
+            <field name="report_file">iet_hr_employee_enhancement.employee_report_excel</field>
+        </record>
+
+        <menuitem id="menu_employee_report"
+                  name="Employees Report Excell"
+                  action="employee_excel_action"
+                  parent="hr.hr_menu_hr_reports"
+                  sequence="200"/>
+
+    </data>
+</odoo>

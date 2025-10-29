@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+
+        <menuitem id="iet_hr_support_services.menu_hr_services_root_menu"
+                  name="HR Services"
+                  web_icon="iet_hr_support_services,static/description/icon.png"
+        />
+
+        <menuitem id="menu_hr_services_parent_menu"
+                  name="HR Support Services"
+                  parent="iet_hr_support_services.menu_hr_services_root_menu"
+                  sequence="1">
+
+            <menuitem id="request_to_transfer_employee" name="Employee Transfer Request"
+                      action="iet_hr_support_services.request_transfer_employee_action" sequence="10"/>
+            <menuitem id="request_to_specify_letter" name="Request for Letter of Introduction"
+                      action="iet_hr_support_services.request_to_specify_letter_action" sequence="11"/>
+            <menuitem id="request_to_document_transaction" name="Request for Document Transaction"
+                      action="iet_hr_support_services.request_document_transaction_action" sequence="12"/>
+            <menuitem id="request_maintenance_of_devices_and_printers"
+                      name="Request for Maintenance of Devices and Printers"
+                      action="iet_hr_support_services.request_maintenance_devices_printers_action" sequence="13"/>
+            <menuitem id="request_plumbing_and_electrical_maintenance"
+                      name="Request for Plumbing and Electrical Maintenance"
+                      action="iet_hr_support_services.request_plumbing_and_electrical_action" sequence="14"/>
+            <menuitem id="request_to_change_salary_account" name="Request to Change Salary Account"
+                      action="iet_hr_support_services.request_change_salary_account_action" sequence="15"/>
+            <menuitem id="request_office_supplies" name="Request for Office Supplies"
+                      action="iet_hr_support_services.request_office_supplies_action" sequence="16"/>
+            <menuitem id="assignment_to_external_work_mission" name="Assignment to External Work Mission"
+                      action="iet_hr_support_services.assignment_external_work_action" sequence="17"/>
+            <menuitem id="others" name="Others"
+                      action="iet_hr_support_services.others_action" sequence="18"/>
+        </menuitem>
+
+    </data>
+</odoo>

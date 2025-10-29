@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.hr.enhance</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="70"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//app[@name='hr']" position="inside">
+                <block title="Employee Features" name="employee_features_setting_container">
+                    <setting help="Allowing the entry of employee insurance information"
+                             title="Allowing the entry of employee insurance information.">
+                        <field name="hr_employee_insurance_information"/>
+                    </setting>
+                    <setting help="Allowing the entry of work uniform measurement information for employees"
+                             title="Allowing the entry of work uniform measurement information for employees.">
+                        <field name="hr_employee_work_uniform_measurement"/>
+                    </setting>
+                </block>
+            </xpath>
+
+
+        </field>
+    </record>
+
+
+    <record id="view_country_inherit_action" model="ir.actions.act_window">
+        <field name="name">Res Country</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.country</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="res_country_custom" name="Country" parent="hr.menu_config_employee"
+              action="view_country_inherit_action"
+              sequence="100"/>
+
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="ir_cron_scheduler_action_to_create_new_analytic_for_emp" model="ir.cron">
+            <field name="name">Create analytic for Employees</field>
+            <field name="model_id" ref="model_employee_analytic_report"/>
+            <field name="state">code</field>
+            <field name="code">model.action_to_create_new_analytic_for_emp()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <!--      <field name="numbercall">-1</field>-->
+            <field name="nextcall" eval="(DateTime.now() + timedelta(hours=1))"/>
+            <field name="user_id" ref="base.user_root"/>
+            <!--      <field name="doall" eval="False"/>-->
+        </record>
+
+        <record id="ir_cron_scheduler_action_to_update_analytic_for_emp" model="ir.cron">
+            <field name="name">Update analytic for Employees</field>
+            <field name="model_id" ref="model_employee_analytic_report"/>
+            <field name="state">code</field>
+            <field name="code">model.update_employee_reports()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">months</field>
+            <!--      <field name="numbercall">-1</field>-->
+            <!--      <field name="doall" eval="False"/>-->
+        </record>
+
+    </data>
+</odoo>

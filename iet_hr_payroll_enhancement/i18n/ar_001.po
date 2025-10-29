@@ -1,0 +1,488 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* iet_hr_payroll_enhancement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-13 09:08+0000\n"
+"PO-Revision-Date: 2025-02-13 09:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "-> Report"
+msgstr "-> التقرير"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_contract_form_inherit00
+msgid "/ month"
+msgstr "/ الشهر"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__accrual_leave
+msgid "Accrual Leave"
+msgstr "إجازة الاستحقاق"
+
+#. module: iet_hr_payroll_enhancement
+#: model:hr.salary.rule,name:iet_hr_payroll_enhancement.hr_rule_accrual_leave
+msgid "Accrual Leave Rule"
+msgstr "قانون إجازة الاستحقاق"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__amount_of_absences
+msgid "Amount Of Absences"
+msgstr "عدد الغيابات"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__amount_of_penalties
+msgid "Amount Of Penalties"
+msgstr "عدد العقوبات"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__amount_of_attendances
+msgid "Amount of Attendances"
+msgstr "عدد الحضور"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__customs_attendances
+msgid "Attendances"
+msgstr "الحضور"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__batch_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Batch"
+msgstr "دفعة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Category"
+msgstr "فئة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip_employees__company_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.view_hr_payslip_by_employees_inherit
+msgid "Company"
+msgstr "شركة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_contract_form_inherit00
+msgid "Compute"
+msgstr "حساب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__contract_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Contract"
+msgstr "عقد"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__contract_history_line_ids
+msgid "Contract History Line"
+msgstr "سطر تاريخ العقد"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__create_uid
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__create_date
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__base_currency_id
+msgid "Currency"
+msgstr "عملة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_payroll_enhancement.selection__hr_contract_history_line__type__decrease
+msgid "Decrease"
+msgstr "انخفاض"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__display_name
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__employee_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Employee"
+msgstr "موظف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__employee_number
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.view_hr_payslip_filter_inherit
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__food_allowance
+msgid "Food Allowance"
+msgstr "بدل الطعام"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__food_allowance
+msgid "Food allowance"
+msgstr "بدل الطعام"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "From"
+msgstr "من"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "إنشاء إيصالات دفع لكافة الموظفين المحددين"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_contract_form_inherit00
+msgid "History"
+msgstr "تاريخ"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__housing_allowance
+msgid "Housing Allowance"
+msgstr "بدل السكن"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_payroll_enhancement.selection__hr_contract__housing_type_allowance__housing_allowance
+msgid "Housing Allowance Category"
+msgstr "فئة بدل السكن"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__housing_type_allowance
+msgid "Housing Type Allowance"
+msgstr "بدل نوع السكن"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__id
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_payroll_enhancement.selection__hr_contract_history_line__type__increase
+msgid "Increase"
+msgstr "زيادة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Input Data"
+msgstr "بيانات الإدخال"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__write_uid
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__write_date
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_payroll_excel_report_wizard__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Last Working Date"
+msgstr "تاريخ العمل الأخير"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_payroll_enhancement.selection__hr_contract__housing_type_allowance__monthly_housing
+msgid "Monthly Housing Allowance"
+msgstr "بدل سكن شهري"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Name"
+msgstr "الاسم"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Number"
+msgstr "رقم"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__number_of_absences_days
+msgid "Number Of Absences Days"
+msgstr "عدد أيام الغياب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__number_of_absent_days
+msgid "Number Of Absent Days"
+msgstr "عدد الأيام الغائبة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__number_of_penalties_days
+msgid "Number Of Penalties Days"
+msgstr "عدد أيام العقوبات"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__other_allowance
+msgid "Other Allowance"
+msgstr "بدل آخر"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Other Inputs"
+msgstr "مدخلات أخرى"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__overtime_amount
+msgid "Overtime Amount"
+msgstr "مبلغ الساعات الإضافية"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__overtime_hours
+msgid "Overtime Hours"
+msgstr "ساعات العمل الإضافي"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال الدفع"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_report_iet_hr_payroll_enhancement_payroll_form_view
+msgid "Payroll Customs Report"
+msgstr "تقرير تخصيص الرواتب"
+
+
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.ui.menu,name:iet_hr_payroll_enhancement.menu_payroll_excel_report_2
+msgid "Excel Payroll Report"
+msgstr "تقرير الرواتب في إكسل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.actions.act_window,name:iet_hr_payroll_enhancement.action_payroll_excel_report_wizard
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_payroll_excel_report_wizard
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.view_payroll_excel_report_wizard
+msgid "Excel Payroll Report Wizard"
+msgstr "تقرير الرواتب في إكسل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.actions.report,name:iet_hr_payroll_enhancement.payroll_report_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Payroll Report"
+msgstr "تقرير الرواتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Payslip Line"
+msgstr "سطر قسيمة الراتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_payroll_enhancement.selection__hr_contract__housing_type_allowance__period
+msgid "Period"
+msgstr "الفترة"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__phone_allowance
+msgid "Phone Allowance"
+msgstr "بدل الهاتف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__natural_of_work_allowance
+msgid "Natural Of Work Allowance"
+msgstr "بدل طبيعة العمل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__phone_allowance
+msgid "Phone allowance"
+msgstr "بدل الهاتف"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__natural_of_work_allowance
+msgid "Natural Of Work Allowance"
+msgstr "بدل طبيعة العمل"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.view_payroll_excel_report_wizard
+msgid "Print"
+msgstr "طباعة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Rate (%)"
+msgstr "النسبة (%)"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Rule"
+msgstr "القاعدة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_contract_form_inherit00
+msgid "Salary Computation"
+msgstr "حساب الراتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.ui.menu,name:iet_hr_payroll_enhancement.salary_history_menu_action
+msgid "Salary History"
+msgstr "تاريخ الرواتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.salary_history_line_view_tree
+msgid "Salary History Line"
+msgstr "سطر تاريخ الرواتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.actions.act_window,name:iet_hr_payroll_enhancement.salary_history_line_action
+msgid "Salary History line Action"
+msgstr "إجراء سطر تاريخ الرواتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__country_code
+msgid "Saudi Company Country Code"
+msgstr "رمز الدولة للشركة السعودية"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.view_hr_payslip_by_employees_inherit
+msgid ""
+"Set a specific company if you wish to select all the employees from this "
+"company."
+msgstr "حدد شركة معينة إذا كنت ترغب في اختيار جميع الموظفين من هذه الشركة."
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_payslip__show_last_payslip
+msgid "Show Basic In Annual"
+msgstr "عرض الأساس في السنوي"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__social_insurance_allowance
+msgid "Social Insurance Allowance"
+msgstr "بدل التأمين الاجتماعي"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Structure"
+msgstr "الهيكل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,help:iet_hr_payroll_enhancement.field_hr_contract__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr "رمز الدولة حسب المعيار الدولي أيزو المكون من حرفين.\nيمكنك استخدام هذا الحقل لإجراء بحث سريع."
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "The date of the holiday"
+msgstr "تاريخ العطلة"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "Total Amount"
+msgstr "الإجمالي"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract__total_salary
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__total_salary
+msgid "Total Salary"
+msgstr "إجمالي الراتب"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Total Working Days"
+msgstr "إجمالي أيام العمل"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Total Working Hours"
+msgstr "إجمالي ساعات العمل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__transportation_allowance
+msgid "Transportation Allowance"
+msgstr "بدل النقل"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model.fields,field_description:iet_hr_payroll_enhancement.field_hr_contract_history_line__wage
+msgid "Wage"
+msgstr "الأجر"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Worked Day"
+msgstr "يوم عمل"
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Worked Days"
+msgstr "أيام العمل"
+
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.hr_payslip_form_inherit00
+msgid "Worked Days & Inputs"
+msgstr "أيام العمل والمدخلات"
+
+#. module: iet_hr_payroll_enhancement
+#: model:ir.model,name:iet_hr_payroll_enhancement.model_hr_contract_history_line
+msgid "hr.contract.history.line"
+msgstr ""
+
+#. module: iet_hr_payroll_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_payroll_enhancement.payroll_form_view
+msgid "to"
+msgstr "الى"
+
+#. module: iet_hr_payroll_enhancement
+#: model:hr.salary.rule,name:iet_hr_payroll_enhancement.hr_rule_end_of_the_contract
+msgid "إنهاء العقد"
+msgstr ""
+
+#. module: iet_hr_payroll_enhancement
+#: model:hr.salary.rule,name:iet_hr_payroll_enhancement.hr_rule_termination_of_the_contract_by_the_company
+msgid "إنهاء العقد / إنهاء العقد من قبل الشركة"
+msgstr ""
+
+#. module: iet_hr_payroll_enhancement
+#: model:hr.salary.rule,name:iet_hr_payroll_enhancement.hr_rule_departure_resignation
+msgid "الاستقالة"
+msgstr ""
+
+#. module: iet_hr_payroll_enhancement
+#: model:hr.salary.rule,name:iet_hr_payroll_enhancement.hr_rule_departure_exceptional_request
+msgid "الاستقالة / طلب استثنائي"
+msgstr ""

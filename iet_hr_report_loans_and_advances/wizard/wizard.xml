@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_loans_advances_report_wizard_form" model="ir.ui.view">
+            <field name="name">loans.advances.report.wizard.form</field>
+            <field name="model">loans_advances_report.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Loans and Advances Report">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date_from"/>
+                                <field name="date_to"/>
+                            </group>
+                            <group>
+                                <field name="department_id"/>
+                                <field name="employee_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                <button string="Loans Excel"
+                        type="object"
+                        name="action_generate_loans_report"
+                        class="btn-primary"/>
+
+                <button string="Cancel" special="cancel"/>
+            </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_loans_advances_report_wizard" model="ir.actions.act_window">
+            <field name="name">Loans and Advances Report</field>
+            <field name="res_model">loans_advances_report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_loans_advances_report_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+
+        <record id="hr_contract_form_inherit" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='job_id']" position="after">
+                    <field name="num_of_years_for_contract"/>
+                    <field name="automatic_contract_renewal"/>
+                </xpath>
+
+                <xpath expr="//field[@name='contract_type_id']" position="after">
+                    <field name="probation_period" string="Probation Period (Days)"/>
+                    <field name="probation_end_date"/>
+                </xpath>
+
+                <xpath expr="//page[1]/group/group" position="after">
+                    <group name="other_salary_details">
+
+                    </group>
+                    <group string="Other Benefits">
+                        <field name="contract_status" string="Contract Status"/>
+                        <field name="medical_insurance"/>
+                        <field name="medical_insurance_members"
+                               invisible="not medical_insurance or contract_status != 'family'"/>
+                        <field name="medical_insurance_amount" invisible="not medical_insurance"/>
+                        <field name="company_car"/>
+                        <field name="car_number" invisible="not company_car"/>
+                        <field name="accommodation"/>
+                        <field name="accommodation_cost" invisible="not accommodation"/>
+                        <field name="air_ticket"/>
+                        <field name="number_of_tickets" invisible="not air_ticket"/>
+                        <field name="air_ticket_cost" invisible="not air_ticket"/>
+                        <!--                        <field name="dependents_companies_fees"/>-->
+                    </group>
+                </xpath>
+
+                <xpath expr="//notebook" position="inside">
+                    <page name="other_details" string="Other Details">
+                        <group string="Check List">
+                            <field name="qiwa_contract_create"/>
+                            <field name="qiwa_contract_approved"/>
+                            <field name="gosi_salary_information_update"/>
+                        </group>
+
+                        <group string="Days Counter">
+                            <group>
+                                <field name="number_of_unpaid_days"/>
+                                <field name="number_of_sick_leaves"/>
+                            </group>
+                            <group>
+                                <button name="get_number_of_leave_days" type="object" string="Get Leave Days"
+                                        class="btn-primary"/>
+
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

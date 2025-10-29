@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_payroll_excel_report_wizard" model="ir.ui.view">
+        <field name="name">payroll.excel.report.wizard.form</field>
+        <field name="model">payroll.excel.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Excel Payroll Report Wizard">
+                <group>
+                    <field name="batch_id"/>
+                </group>
+                <footer>
+                    <button string="Print" type="object" name="print_report" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_payroll_excel_report_wizard" model="ir.actions.act_window">
+        <field name="name">Excel Payroll Report Wizard</field>
+        <field name="res_model">payroll.excel.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <report
+            id="payroll_excel_report"
+            model="payroll.excel.report.wizard"
+            string="Excel Payroll Report"
+            report_type="qweb-pdf"
+            file="iet_payroll_report.payroll_excel_report_template"
+            name="iet_payroll_report.payroll_excel_report_template"
+            print_report_name="'Payroll_Report_' + object.batch_id.name"
+            attachment_use="True"
+            attachment="(object.batch_id.name + '.xlsx')"
+    />
+
+    <menuitem id="menu_payroll_excel_report_2" name="Excel Payroll Report" parent="hr_payroll.menu_hr_payroll_report"
+              action="action_payroll_excel_report_wizard"/>
+</odoo>

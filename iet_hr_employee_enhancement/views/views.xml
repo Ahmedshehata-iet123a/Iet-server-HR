@@ -1,0 +1,241 @@
+<odoo>
+    <data>
+        <record id="allowance_tags_view_form" model="ir.ui.view">
+            <field name="name">Allowance Tags view Form</field>
+            <field name="model">allowance.tags</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="allowance_tags_action" model="ir.actions.act_window">
+            <field name="name">Allowance Tags</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">allowance.tags</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <record id="joining_type_view_form" model="ir.ui.view">
+            <field name="name">joining_type_view_form</field>
+            <field name="model">joining.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="joining_type_action" model="ir.actions.act_window">
+            <field name="name">Joining Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">joining.type</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record id="reason_end_contract_view_form" model="ir.ui.view">
+            <field name="name">reason_end_contract_view_form</field>
+            <field name="model">reason.end.contract</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="reason_end_contract_action" model="ir.actions.act_window">
+            <field name="name">Reason End Of Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">reason.end.contract</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record id="employee_contribution_contract_view_form" model="ir.ui.view">
+            <field name="name">employee_contribution_contract_view_form</field>
+            <field name="model">employee.contribution</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="employee_contribution_contract_action" model="ir.actions.act_window">
+            <field name="name">Employee Contribution</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employee.contribution</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <record id="employee_family_member_view_tree" model="ir.ui.view">
+            <field name="name">employee_family_member_view_tree</field>
+            <field name="model">employee.family.member</field>
+            <field name="arch" type="xml">
+                <list string="Family">
+                    <field name="relation_id" width="200px"/>
+                    <field name="name" width="200px"/>
+                    <field name="relational" width="200px"/>
+                    <field name="gender_member" width="200px"/>
+                    <field name="member_date_of_birth" width="200px"/>
+                    <field name="member_age" width="200px"/>
+                    <field name="include_in_ticket" width="200px"/>
+                    <field name="member_medical_insurance" width="200px"/>
+                    <field name="id_number" width="200px"/>
+                    <field name="passport_number" width="200px"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="document_line_view_form" model="ir.ui.view">
+            <field name="name">document_line_view_form</field>
+            <field name="model">document.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <header>
+                            <field name="state" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+                        </header>
+                        <h1 class="d-flex flex-row align-items-center">
+                            <field name="name" placeholder="Name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="document_id"/>
+                                <field name="document_type_2"/>
+                                <field name="document_expiry_date"/>
+                                <field name="employee_id"/>
+                                <field name="coustdian"/>
+                            </group>
+                            <group>
+                                <field name="document_stages"/>
+                                <field name="document_issue_date"/>
+                                <field name="document_expiry_date_alart"/>
+                                <field name="attachment"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="document_line_view_tree" model="ir.ui.view">
+            <field name="name">document_line_view_tree</field>
+            <field name="model">document.line</field>
+            <field name="arch" type="xml">
+                <list string="Documents">
+                    <field name="document_id"/>
+                    <field name="document_stages"/>
+                    <field name="document_type_2"/>
+                    <field name="document_issue_date"/>
+                    <field name="document_expiry_date"/>
+                    <field name="document_expiry_date_alart"/>
+                    <field name="employee_id"/>
+                    <field name="attachment"/>
+                    <field name="coustdian"/>
+                </list>
+            </field>
+        </record>
+
+
+        <record id="equipment_view_form" model="ir.ui.view">
+            <field name="name">Equipment View Form</field>
+            <field name="model">equipment</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <!--                                <field name="equipment_id"/>-->
+                                <field name="used_by"/>
+                                <field name="employee" invisible="used_by != 'employee'"/>
+                                <field name="department" invisible="used_by != 'department'"/>
+                                <field name="location" invisible="used_by != 'location'"/>
+                            </group>
+                            <group>
+                                <field name="purchase_date"/>
+                                <field name="scrap_date"/>
+                                <field name="transfer_of_responsibility_records"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Product Information">
+                                <group>
+                                    <field name="supplier"/>
+                                    <field name="model"/>
+                                    <field name="serial_number"/>
+                                    <field name="cost"/>
+                                    <field name="warranty_expiration_date"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+        <record id="equipment_view_tree" model="ir.ui.view">
+            <field name="name">equipment_view_tree</field>
+            <field name="model">equipment</field>
+            <field name="arch" type="xml">
+                <list string="Equipment">
+                    <field name="name"/>
+                    <!--                    <field name="equipment_id"/>-->
+                    <field name="used_by"/>
+                    <field name="employee" invisible="used_by != 'employee'"/>
+                    <field name="department" invisible="used_by != 'department'"/>
+                    <field name="location" invisible="used_by != 'location'"/>
+                    <field name="purchase_date"/>
+                    <field name="scrap_date"/>
+                    <field name="transfer_of_responsibility_records"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="equipment_action" model="ir.actions.act_window">
+            <field name="name">Equipment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">equipment</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+        <menuitem id="allowance_tags_action_menu" name="Allowance Tags" parent="hr.menu_config_employee"
+                  action="allowance_tags_action" sequence="2"/>
+        <menuitem id="joining_type_menu" name="Joining Type" parent="hr.menu_config_employee"
+                  action="joining_type_action" sequence="11"/>
+        <menuitem id="reason_end_contract_menu" name="Reason End Of Contract" parent="hr.menu_config_employee"
+                  action="reason_end_contract_action" sequence="12"/>
+        <menuitem id="employee_contribution_contract_menu" name="Employee Contribution" parent="hr.menu_config_employee"
+                  action="employee_contribution_contract_action" sequence="13"/>
+        <menuitem id="equipment_menu_item" name="Equipment" parent="hr.menu_config_employee" action="equipment_action"
+                  sequence="15"/>
+
+
+    </data>
+</odoo>

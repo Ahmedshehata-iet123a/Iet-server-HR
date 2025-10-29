@@ -1,0 +1,1189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* iet_hr_support_services
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-13 07:51+0000\n"
+"PO-Revision-Date: 2025-02-13 07:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "تزيين استثناء النشاط"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__done
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__done
+msgid "Approved"
+msgstr "موافق"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.assignment_to_external_work_mission
+msgid "Assignment to External Work Mission"
+msgstr "تكليف بمهمة عمل خارجية"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__bank_code
+msgid "Bank Code"
+msgstr "كود البنك"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__bank_iban_number
+msgid "Bank Iban Number"
+msgstr "رقم ايبان البنك"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__bank_name
+msgid "Bank Name"
+msgstr "اسم البنك"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__cancel
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__cancel
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__create_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__create_uid
+msgid "Created by"
+msgstr "أنشأه"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__create_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__create_date
+msgid "Created on"
+msgstr "أنشأ في"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__current_request_no
+msgid "Current Bank Account"
+msgstr "الحساب البنكي الحالي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__current_branch
+msgid "Current Location"
+msgstr "الموقع الحالي"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "Department Manager Approve"
+msgstr "موافقة مدير القسم"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+msgid "Direct Manager Approve"
+msgstr "موافقة المدير المباشر"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__display_name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__employee_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__employee_code
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__employee_code
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_to_transfer_employee
+msgid "Employee Transfer Request"
+msgstr "طلب نقل موظف"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__current_request_no
+msgid "Employee bank account to pay salaries"
+msgstr "حساب البنك للموظف لدفع الرواتب"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__evacuation_bank
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__evacuation_bank
+msgid "Evacuation Bank"
+msgstr "بنك الإخلاء"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__financial_management_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__financial_management_approval
+msgid "Financial Management Approval"
+msgstr "موافقة إدارة المالية"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+msgid "Financial Management Approve"
+msgstr "موافقة إدارة المالية"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+msgid "Financial management Approve"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين (الشركاء)"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__hr_approval
+msgid "HR Approval"
+msgstr "موافقة الموارد البشرية"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "HR Approve"
+msgstr "موافقة الموارد البشرية"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.menu_hr_services_root_menu
+msgid "HR Services"
+msgstr "الخدمات المساندة"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.menu_hr_services_parent_menu
+msgid "HR Support Services"
+msgstr "خدمات الموارد البشرية المساندة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__has_message
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__id
+msgid "ID"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+msgid "IT Manager Approve"
+msgstr "موافقة مدير تكنولوجيا المعلومات "
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "رمز للإشارة إلى نشاط استثنائي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__message_needaction
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم التحقق، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__message_has_error
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحقق، فإن بعض الرسائل تحتوي على خطأ في التسليم."
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_is_follower
+msgid "Is Follower"
+msgstr "هل متابع"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__write_uid
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__write_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد تسليم نشاطي"
+
+#. module: iet_hr_support_services
+#. odoo-python
+#: code:addons/iet_hr_support_services/models/assignment_external_work.py:0
+#: code:addons/iet_hr_support_services/models/assignment_external_work.py:0
+#: code:addons/iet_hr_support_services/models/assignment_external_work.py:0
+#: code:addons/iet_hr_support_services/models/others.py:0
+#: code:addons/iet_hr_support_services/models/others.py:0
+#: code:addons/iet_hr_support_services/models/others.py:0
+#: code:addons/iet_hr_support_services/models/request_maintenance_devices_and_printers.py:0
+#: code:addons/iet_hr_support_services/models/request_maintenance_devices_and_printers.py:0
+#: code:addons/iet_hr_support_services/models/request_maintenance_devices_and_printers.py:0
+#: code:addons/iet_hr_support_services/models/request_office_supplies.py:0
+#: code:addons/iet_hr_support_services/models/request_office_supplies.py:0
+#: code:addons/iet_hr_support_services/models/request_office_supplies.py:0
+#: code:addons/iet_hr_support_services/models/request_plumbing_and_electrical.py:0
+#: code:addons/iet_hr_support_services/models/request_plumbing_and_electrical.py:0
+#: code:addons/iet_hr_support_services/models/request_plumbing_and_electrical.py:0
+#: code:addons/iet_hr_support_services/models/request_to_change_salary_account.py:0
+#: code:addons/iet_hr_support_services/models/request_to_change_salary_account.py:0
+#: code:addons/iet_hr_support_services/models/request_to_change_salary_account.py:0
+#: code:addons/iet_hr_support_services/models/request_to_document_transaction.py:0
+#: code:addons/iet_hr_support_services/models/request_to_document_transaction.py:0
+#: code:addons/iet_hr_support_services/models/request_to_document_transaction.py:0
+#: code:addons/iet_hr_support_services/models/request_to_specify_letter.py:0
+#: code:addons/iet_hr_support_services/models/request_to_specify_letter.py:0
+#: code:addons/iet_hr_support_services/models/request_to_specify_letter.py:0
+#: code:addons/iet_hr_support_services/models/request_transfer_employee.py:0
+#: code:addons/iet_hr_support_services/models/request_transfer_employee.py:0
+#: code:addons/iet_hr_support_services/models/request_transfer_employee.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__new_request_no
+msgid "New Bank Account"
+msgstr "حساب مصرفي جديد"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__new_branch
+msgid "New Location"
+msgstr "موقع جديد"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__new_request_no
+msgid "New Request Number"
+msgstr "رقم الطلب الجديد"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "حدث تقويم النشاط التالي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "موعد النشاط التالي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.assignment_external_work_action
+msgid "No Request To Assignment External Work"
+msgstr "لا توجد طلبات لتكليف العمل الخارجي"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_change_salary_account_action
+msgid "No Request To Change Salary Account"
+msgstr "لا توجد طلبات لتغيير حساب الراتب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_document_transaction_action
+msgid "No Request To Document Transaction"
+msgstr "لا توجد طلبات لتوثيق المعاملة"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_maintenance_devices_printers_action
+msgid "No Request To Maintenance Devices Printers"
+msgstr "لا توجد طلبات لصيانة الأجهزة والطابعات"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_office_supplies_action
+msgid "No Request To Office Supplies"
+msgstr "لا توجد طلبات لوازم المكتب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.others_action
+msgid "No Request To Other Request"
+msgstr "لا توجد طلبات أخرى"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_plumbing_and_electrical_action
+msgid "No Request To Plumbing And Electrical"
+msgstr "لا توجد طلبات للسباكة والكهرباء"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_to_specify_letter_action
+msgid "No Request To Specify Letter"
+msgstr "لا توجد طلبات لتحديد الرسالة"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.actions.act_window,help:iet_hr_support_services.request_transfer_employee_action
+msgid "No Request To Transfer Employee"
+msgstr "لا توجد طلبات لنقل الموظف"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__old_request_no
+msgid "Old Bank Account"
+msgstr "حساب البنك القديم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__old_branch
+msgid "Old Location"
+msgstr "الموقع القديم"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.others
+msgid "Others"
+msgstr "أخرى"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__reason
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__reason
+msgid "Reason"
+msgstr "سبب"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__reject
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "Reject"
+msgstr "رفض"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__reject
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__reject
+msgid "Rejected"
+msgstr "مرفوض"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_search
+msgid "Request Assignment External Work"
+msgstr "طلب تكليف العمل الخارجي"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_search
+msgid "Request Change Salary Account"
+msgstr "طلب تغيير حساب الراتب"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__request_date
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__request_date
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_search
+msgid "Request Document Transaction"
+msgstr "طلب توثيق المعاملة"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_search
+msgid "Request Maintenance Devices Printers"
+msgstr "طلب صيانة الأجهزة والطابعات"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__name
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__name
+msgid "Request Name"
+msgstr "اسم الطلب"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__sequence
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__sequence
+msgid "Request Number"
+msgstr "رقم الطلب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_search
+msgid "Request Office Supplies"
+msgstr "طلب لوازم المكتب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_search
+msgid "Request Other Request"
+msgstr "طلب طلب آخر"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_search
+msgid "Request Plumbing And Electrical"
+msgstr "طلب السباكة والكهرباء"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_search
+msgid "Request Specify Letter"
+msgstr "طلب تحديد الرسالة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__request_to
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__request_to
+msgid "Request To"
+msgstr "طلب إلى"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.assignment_external_work_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_tree
+msgid "Request To Assignment External Work"
+msgstr "طلب تكليف العمل الخارجي"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_change_salary_account_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_tree
+msgid "Request To Change Salary Account"
+msgstr "طلب تغيير حساب الراتب"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_document_transaction_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_tree
+msgid "Request To Document Transaction"
+msgstr "طلب توثيق المعاملة"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_maintenance_devices_printers_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_tree
+msgid "Request To Maintenance Devices Printers"
+msgstr "طلب صيانة الأجهزة والطابعات"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_office_supplies_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_tree
+msgid "Request To Office Supplies"
+msgstr "طلب لوازم المكتب"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.others_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_tree
+msgid "Request To Other Request"
+msgstr "طلب طلب آخر"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_plumbing_and_electrical_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_tree
+msgid "Request To Plumbing And Electrical"
+msgstr "طلب السباكة والكهرباء"
+
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_to_specify_letter_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_tree
+msgid "Request To Specify Letter"
+msgstr "طلب تحديد الرسالة"
+
+#. module: iet_hr_support_services
+#: model:ir.actions.act_window,name:iet_hr_support_services.request_transfer_employee_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_tree
+msgid "Request To Transfer Employee"
+msgstr "طلب نقل الموظف"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_search
+msgid "Request Transfer Employee"
+msgstr "طلب نقل الموظف"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_to_document_transaction
+msgid "Request for Document Transaction"
+msgstr "طلب توثيق المعاملة"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_to_specify_letter
+msgid "Request for Letter of Introduction"
+msgstr "طلب خطاب تقديم"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_maintenance_of_devices_and_printers
+msgid "Request for Maintenance of Devices and Printers"
+msgstr "طلب صيانة الأجهزة والطابعات"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_office_supplies
+msgid "Request for Office Supplies"
+msgstr "طلب لوازم المكتب"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_plumbing_and_electrical_maintenance
+msgid "Request for Plumbing and Electrical Maintenance"
+msgstr "طلب صيانة السباكة والكهرباء"
+
+#. module: iet_hr_support_services
+#: model:ir.ui.menu,name:iet_hr_support_services.request_to_change_salary_account
+msgid "Request to Change Salary Account"
+msgstr "طلب تغيير حساب الراتب"
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "Reset to draft"
+msgstr "إعادة تعيين إلى مسودة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة القصيرة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__bank_code
+msgid "Sometimes called BIC or Swift."
+msgstr "يسمى أحيانًا BIC أو Swift."
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__state
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__activity_state
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مر بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: الأنشطة المستقبلية."
+
+#. module: iet_hr_support_services
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.assignment_external_work_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.others_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_change_salary_account_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_document_transaction_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_maintenance_devices_printers_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_office_supplies_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_plumbing_and_electrical_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_to_specify_letter_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_support_services.request_transfer_employee_view_form
+msgid "Submit"
+msgstr "تقديم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__department_manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__department_manager_approval
+msgid "To Department Approval"
+msgstr "للموافقة من القسم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__manager_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__manager_approval
+msgid "To Direct Approval"
+msgstr "للموافقة المباشرة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__manager_approval
+msgid "To Direct approval"
+msgstr "للموافقة المباشرة"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__hr_approval
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__hr_approval
+msgid "To HR Approval"
+msgstr "للموافقة من الموارد البشرية"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__it_approval
+msgid "To IT Approval"
+msgstr "للموافقة من قسم تكنولوجيا المعلومات"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__others__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_change_salary_account__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_document_transaction__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_maintenance_devices_printers__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_office_supplies__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_plumbing_and_electrical__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_specify_letter__state__draft
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__request_transfer_employee__state__draft
+msgid "To Submit"
+msgstr "للتقديم"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_assignment_external_work__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_others__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_change_salary_account__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_document_transaction__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_maintenance_devices_printers__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_office_supplies__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_plumbing_and_electrical__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_specify_letter__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_support_services.field_request_transfer_employee__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields,help:iet_hr_support_services.field_assignment_external_work__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_others__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_change_salary_account__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_document_transaction__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_maintenance_devices_printers__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_office_supplies__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_plumbing_and_electrical__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_specify_letter__website_message_ids
+#: model:ir.model.fields,help:iet_hr_support_services.field_request_transfer_employee__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ التواصل عبر الموقع"
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_assignment_external_work
+msgid "assignment.external.work"
+msgstr "تعيين العمل الخارجي"
+
+#. module: iet_hr_support_services
+#: model:ir.model.fields.selection,name:iet_hr_support_services.selection__assignment_external_work__state__done
+msgid "done"
+msgstr "منجز"
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_others
+msgid "others"
+msgstr "أخرى"
+
+
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_change_salary_account
+msgid "request.change.salary.account"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_document_transaction
+msgid "request.document.transaction"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_maintenance_devices_printers
+msgid "request.maintenance.devices.printers"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_office_supplies
+msgid "request.office.supplies"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_plumbing_and_electrical
+msgid "request.plumbing.and.electrical"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_specify_letter
+msgid "request.specify.letter"
+msgstr ""
+
+#. module: iet_hr_support_services
+#: model:ir.model,name:iet_hr_support_services.model_request_transfer_employee
+msgid "request.transfer.employee"
+msgstr ""

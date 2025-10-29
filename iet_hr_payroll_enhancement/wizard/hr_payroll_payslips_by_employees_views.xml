@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_hr_payslip_by_employees_inherit" model="ir.ui.view">
+            <field name="name">hr_payroll_payslip_employees</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_by_employees"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[2]" position="after">
+                    <separator string="Company" colspan="2"/>
+                    <div class="o_row">
+                        <p class="text-muted w-50">Set a specific company if you wish to select all the employees from this company.</p>
+                        <field name="company_id" nolabel="1"/>
+                    </div>
+                </xpath>
+<!--                <xpath expr="//field[@name='employee_ids']/tree//field[@name='department_id']" position="after">-->
+<!--                    <field name="is_on_vacation"/>-->
+<!--                </xpath>-->
+            </field>
+        </record>
+
+    </data>
+</odoo>

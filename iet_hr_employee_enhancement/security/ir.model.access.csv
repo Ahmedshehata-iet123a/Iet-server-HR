@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_joining_type,access_joining_type,model_joining_type,base.group_user,1,1,1,1
+access_reason_end_contract,access_reason_end_contract,model_reason_end_contract,base.group_user,1,1,1,1
+access_employee_contribution,access_employee_contribution,model_employee_contribution,base.group_user,1,1,1,1
+access_employee_family_member,access_employee_family_member,model_employee_family_member,base.group_user,1,1,1,1
+access_location_transfer,access_location_transfer,model_location_transfer,base.group_user,1,1,1,1
+location,location,model_location,,1,1,1,1
+document_line,document_line,model_document_line,base.group_user,1,1,1,1
+equipment,equipment,model_equipment,base.group_user,1,1,1,1
+allowance_tags,allowance_tags,model_allowance_tags,base.group_user,1,1,1,1
+religion,religion,model_religion,base.group_user,1,1,1,1
+document_type_custom,document_type_custom,model_document_type_custom,base.group_user,1,1,1,1
+access_employee_analytic_report,access_employee_analytic_report,model_employee_analytic_report,base.group_user,1,1,1,1

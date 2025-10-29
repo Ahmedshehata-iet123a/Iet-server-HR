@@ -1,0 +1,803 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* iet_hr_end_of_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-13 07:56+0000\n"
+"PO-Revision-Date: 2025-02-13 07:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__actions_confirmation
+msgid "Actions Confirmation"
+msgstr "تأكيد الإجراءات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__actions_required
+msgid "Actions Required"
+msgstr "الإجراءات المطلوبة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "ديكور استثناء النشاط"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_state
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_state
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__additional_information
+msgid "Additional Information"
+msgstr "معلومات إضافية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__leave_balance_amount
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__leave_balance_amount
+msgid "Amount Of Net Days"
+msgstr "عدد الأيام الصافية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__annual_leave_id
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__application_type__annual_leave
+msgid "Annual Leave"
+msgstr "إجازة سنوية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__date
+msgid "Application Date"
+msgstr "تاريخ الطلب"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__application_type
+msgid "Application Type"
+msgstr "نوع الطلب"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__approved
+msgid "Approved"
+msgstr "موافق عليه"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__cancel
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__carried_out_by
+msgid "Carried Out By"
+msgstr "تم التنفيذ بواسطة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.actions.act_window,name:iet_hr_end_of_service.clearance_action
+#: model:ir.model,name:iet_hr_end_of_service.model_clearance
+#: model:ir.ui.menu,name:iet_hr_end_of_service.clearance_employee_menu
+#: model:ir.ui.menu,name:iet_hr_end_of_service.clearance_time_off_menu
+msgid "Clearance"
+msgstr "إخلاء الطرف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.id_resignation_request_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__resignation_request__state__confirmed
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__contract_date_end
+msgid "Contract Date End"
+msgstr "تاريخ انتهاء العقد"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__nationality
+msgid "Country Name"
+msgstr "اسم الدولة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__create_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__create_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__create_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__create_uid
+msgid "Created by"
+msgstr "أنشأ بواسطة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__create_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__create_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__create_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__Date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__date_of_application
+msgid "Date Of Application"
+msgstr "تاريخ الطلب"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__department_id
+msgid "Department"
+msgstr "قسم"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__departure_date
+msgid "Departure Date"
+msgstr "تاريخ المغادرة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model,name:iet_hr_end_of_service.model_hr_departure_reason
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__departure_reason
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__departure_reason
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__hr_departure_id
+msgid "Departure Reason"
+msgstr "سبب المغادرة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__name
+msgid "Description"
+msgstr "وصف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__display_name
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__display_name
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__display_name
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__resignation_request__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__duration
+msgid "Duration"
+msgstr "المدة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__employee_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__employee_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__employee_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_search
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.resignation_request_view_search
+msgid "Employee"
+msgstr "موظف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__employee_clearance_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__employee_clearance_id
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Employee Clearance"
+msgstr "إخلاء طرف الموظف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__employee_clearance_count
+msgid "Employee Clearance Count"
+msgstr "عدد إخلاء طرف الموظف"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.id_resignation_request_view_form
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__employee_number
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__employee_number
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model,name:iet_hr_end_of_service.model_employee_clearance
+msgid "EmployeeClearance"
+msgstr "إخلاء طرف الموظف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__end_notice_period
+msgid "End Notice Period"
+msgstr "نهاية فترة الإشعار"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__application_type__end_of_service
+#: model:ir.ui.menu,name:iet_hr_end_of_service.menu_end_of_service_employee
+#: model:ir.ui.menu,name:iet_hr_end_of_service.menu_end_of_service_time_off
+msgid "End Of Service"
+msgstr "نهاية الخدمة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__entitlement_of_annual_leave
+msgid "Entitlement Of Annual Leave"
+msgstr "استحقاق الإجازة السنوية"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Equipment"
+msgstr "المعدات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__equipment_count
+msgid "Equipment Count"
+msgstr "عدد المعدات"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Finance Approval"
+msgstr "موافقة المالية"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Flight Tickets"
+msgstr "تذاكر الطيران"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__flight_tickets_count
+msgid "Flight Tickets Count"
+msgstr "عدد تذاكر الطيران"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيقونة فانت أوسم، مثل fa-tasks"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_search
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.resignation_request_view_search
+msgid "Group By"
+msgstr "تجميع بواسطة"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "HR Approval"
+msgstr "موافقة الموارد البشرية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__has_message
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__has_message
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "IT approval"
+msgstr "موافقة تكنولوجيا المعلومات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة تشير إلى نشاط استثنائي."
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__identification_number
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__identification_id_custom
+msgid "Identification No"
+msgstr "رقم التعريف"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__message_needaction
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__message_needaction
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، فإن الرسائل الجديدة تتطلب انتباهك."
+
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__message_has_error
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__message_has_error
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__message_has_error
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم التحقق، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Inventory Approval"
+msgstr "موافقة المخزون"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_hr_departure_reason__is_departure
+msgid "Is Departure"
+msgstr "هل هو مغادرة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_is_follower
+msgid "Is Follower"
+msgstr "هل هو متابع"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__job_position
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__job_id
+msgid "Job Position"
+msgstr "المسمى الوظيفي"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__last_return_date
+msgid "Last Return Date"
+msgstr "تاريخ العودة الأخير"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__write_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__write_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__write_uid
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__write_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__write_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__write_date
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__last_working_date
+msgid "Last Working Date"
+msgstr "تاريخ العمل الأخير"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__leave_duration
+msgid "Leave Duration"
+msgstr "مدة الإجازة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__balance_leave_2
+msgid "Leave Net Days"
+msgstr "عدد أيام الإجازة الصافية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__leave_return_date
+msgid "Leave Return Date"
+msgstr "تاريخ العودة من الإجازة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__leave_start_date
+msgid "Leave Start Date"
+msgstr "تاريخ بدء الإجازة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__location
+msgid "Location Name"
+msgstr "اسم الموقع"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__parent_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد تسليم نشاطي"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__name
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__name
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Name"
+msgstr "الاسم"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "الحدث التالي في تقويم الأنشطة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance_line__operating_unit
+msgid "Operating Unit"
+msgstr "وحدة التشغيل"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__custom_pin
+msgid "PIN"
+msgstr "رقم التعريف الشخصي"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Payslips"
+msgstr "إيصالات الدفع"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__payslips_count
+msgid "Payslips Count"
+msgstr "عدد إيصالات الدفع"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__reason_of_the_end_of_contract
+msgid "Reason Of The End Of Contract"
+msgstr "سبب انتهاء العقد"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Reset To Draft"
+msgstr "إعادة تعيين إلى مسودة"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.id_resignation_request_view_form
+msgid "Resignation Information"
+msgstr "معلومات الاستقالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.actions.act_window,name:iet_hr_end_of_service.id_resignation_request_view_action
+#: model:ir.model,name:iet_hr_end_of_service.model_resignation_request
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__resignation_request_id
+#: model:ir.ui.menu,name:iet_hr_end_of_service.menu_resignation_request_categ
+#: model:ir.ui.menu,name:iet_hr_end_of_service.menu_resignation_request_time_off_categ
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Resignation Request"
+msgstr "طلب استقالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__resignation_request_count
+msgid "Resignation Request Count"
+msgstr "عدد طلبات الاستقالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة القصيرة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__salary_advance_count
+msgid "Salary Advance Count"
+msgstr "عدد سلف الرواتب"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Sales Approval"
+msgstr "موافقة المبيعات"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Service Period"
+msgstr "فترة الخدمة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__hire_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__start_notice_period
+msgid "Start Notice Period"
+msgstr "بداية فترة الإشعار"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__state
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__activity_state
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__activity_state
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مر بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: الأنشطة المستقبلية."
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Submit"
+msgstr "تقديم"
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "Time Off"
+msgstr "إجازة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__time_off_count
+msgid "Time Off Count"
+msgstr "عدد الإجازات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__finance_approval
+msgid "To Finance Approval"
+msgstr "للموافقة المالية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__hr_approval
+msgid "To HR Approval"
+msgstr "للموافقة من الموارد البشرية"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__it_approval
+msgid "To IT Approval"
+msgstr "للموافقة من قسم تكنولوجيا المعلومات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__inventory_approval
+msgid "To Inventory Approval"
+msgstr "للموافقة من قسم المخزون"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__sales_approval
+msgid "To Sales Approval"
+msgstr "للموافقة من قسم المبيعات"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields.selection,name:iet_hr_end_of_service.selection__clearance__state__draft
+msgid "To Submit"
+msgstr "للتقديم"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__service_period_2
+msgid "Total Service Years"
+msgstr "إجمالي سنوات الخدمة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__unpaid_leave_days
+msgid "Unpaid Leave Days"
+msgstr "أيام الإجازة غير المدفوعة"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_clearance__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_employee_clearance__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_end_of_service.field_resignation_request__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: iet_hr_end_of_service
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_clearance__website_message_ids
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_employee_clearance__website_message_ids
+#: model:ir.model.fields,help:iet_hr_end_of_service.field_resignation_request__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ التواصل عبر الموقع الإلكتروني"
+
+#. module: iet_hr_end_of_service
+#. odoo-python
+#: code:addons/iet_hr_end_of_service/models/clearance.py:0
+#, python-format
+msgid ""
+"You can't cancel this clearance ,The requested leave has been confirmed or "
+"approved"
+msgstr "لا يمكنك إلغاء إخلاء الطرف هذا، لقد تم تأكيد أو الموافقة على الإجازة المطلوبة."
+
+#. module: iet_hr_end_of_service
+#. odoo-python
+#: code:addons/iet_hr_end_of_service/models/clearance.py:0
+#, python-format
+msgid ""
+"You can't cancel this clearance ,The requested resignation has been "
+"confirmed"
+msgstr "لا يمكنك إلغاء إخلاء الطرف هذا، لقد تم تأكيد الاستقالة المطلوبة."
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_form
+msgid "clearance_form"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.clearance_view_tree
+msgid "clearance_tree"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:ir.model,name:iet_hr_end_of_service.model_employee_clearance_line
+msgid "employee.clearance.line"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model_terms:ir.ui.view,arch_db:iet_hr_end_of_service.id_resignation_request_view_form
+msgid "resignation"
+msgstr "استقالة"
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.end_of_the_contract
+msgid "إنهاء العقد"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.termination_of_the_contract_by_the_company
+msgid "إنهاء العقد من قبل الشركة"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.departure_resignation
+msgid "الاستقالة"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.departure_number80
+msgid "المادة ٨٠"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.departure_no_work
+msgid "رفض العمل"
+msgstr ""
+
+#. module: iet_hr_end_of_service
+#: model:hr.departure.reason,name:iet_hr_end_of_service.departure_exceptional_request
+msgid "طلب استثنائي"
+msgstr ""

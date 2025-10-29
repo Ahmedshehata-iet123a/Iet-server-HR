@@ -1,0 +1,90 @@
+<odoo>
+    <data>
+
+        <record id="hr_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="compute_custom_accrual_leave" string='Compute Accrual' type="object"
+                            class="oe_stat_button"/>
+                </xpath>
+
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <page name="emp_history" string="Accrual Leave Information">
+                        <group>
+                            <group>
+                                <field name="total_service_years"/>
+                                <field name="total_service_days"/>
+                                <field name="days_under_5_years" force_save="1"/>
+                                <field name="days_over_5_years"/>
+                                <label for="service_bonus_days"/>
+                                <div class="o_row" name="div_service_bonus_days">
+                                    <field name="service_bonus_days" groups="hr.group_hr_user"/>
+                                    <span>
+                                        <field name="amount_of_service_bonus_days"/>
+                                    </span>
+                                </div>
+                            </group>
+                            <group>
+                                <label for="leave_days_balance"/>
+                                <div class="o_row" name="div_leave_days_balance">
+                                    <field name="leave_days_balance" groups="hr.group_hr_user"/>
+                                    <span>
+                                        <field name="amount_of_leave_days_balance"/>
+                                    </span>
+                                </div>
+
+                                <label for="leave_days_taken"/>
+                                <div class="o_row" name="div_leave_days_taken">
+                                    <field name="leave_days_taken" groups="hr.group_hr_user"/>
+                                    <span>
+                                        <field name="amount_of_days_taken"/>
+                                    </span>
+                                </div>
+                                <label for="net_days"/>
+                                <div class="o_row" name="div_net_days">
+                                    <field name="net_days" groups="hr.group_hr_user"/>
+                                    <span>
+                                        <field name="amount_of_net_days"/>
+                                    </span>
+                                </div>
+
+                                <field name="leave_policy" widget="selection_badge"/>
+                                <field name="is_on_vacation" widget="boolean_toggle"
+                                       options="{'terminology': 'Vacation'}" readonly="1"/>
+                            </group>
+                        </group>
+                        <field name="return_date_lines_config" invisible="1"/>
+                        <separator string="Employee Return From Vacations" invisible="not return_date_lines_config"/>
+                        <field name="return_vacation_ids" readonly="1" invisible="not return_date_lines_config">
+                            <list decoration-muted="state == 'cancel'">
+                                <field name="expected_return_date"/>
+                                <field name="return_date"/>
+                                <field name="difference_of_days"/>
+                                <field name='state' widget="badge" decoration-success="state == 'approved'"
+                                       decoration-info="state == 'draft'"
+                                       decoration-primary="state == 'submit'"
+                                       decoration-muted="state == 'cancel'"/>
+
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="employee_compute_accrual" model="ir.actions.server">
+            <field name="name">Compute Employee Accrual</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = records.compute_custom_accrual_leave()
+            </field>
+        </record>
+
+    </data>
+</odoo>

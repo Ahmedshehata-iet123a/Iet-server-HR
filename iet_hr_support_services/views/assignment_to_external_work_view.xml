@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <record id="assignment_external_work_view_search" model="ir.ui.view">
+            <field name="name">assignment.external.work.search.view</field>
+            <field name="model">assignment.external.work</field>
+            <field name="arch" type="xml">
+                <search string="Request Assignment External Work">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code"/>
+                    <field name="request_date"/>
+                    <field name="new_request_no"/>
+                    <field name="evacuation_bank"/>
+                    <field name="reason"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="assignment_external_work_view_form" model="ir.ui.view">
+            <field name="name">assignment_external_work_view_form</field>
+            <field name="model">assignment.external.work</field>
+            <field name="arch" type="xml">
+                <form string="Request To Assignment External Work">
+                    <header>
+                        <button name="action_submit" type="object" string="Submit" class="oe_highlight"
+                                invisible="state != 'draft'"/>
+                        <button name="action_hr_approval" type="object" string="HR Approve" class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_hr_officer, iet_hr_employee_enhancement.group_hr_manager"
+                                invisible="state != 'hr_approval'"/>
+                          <button name="action_financial_manager_approval" type="object"
+                                string="Financial Management Approve" class="oe_highlight"
+                                groups="iet_hr_employee_enhancement.group_finance_manager"
+                                invisible="state != 'financial_management_approval'"/>
+                        <button name="action_hr_reject" type="object" string="Reject" class="btn-secondary"
+                                invisible="state == 'reject'"/>
+                        <button name="action_cancel" type="object" string="Cancel" class="btn-secondary"
+                                invisible="state != 'done'"/>
+                        <button name="action_reset_to_draft" type="object" string="Reset to draft" class="btn-secondary"
+                                invisible="state != 'reject'"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,done,reject,cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="sequence" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name" readonly="state != 'draft'"/>
+                                <field name="employee_id" readonly="state != 'draft'"/>
+                                <field name="employee_code"/>
+                                <field name="request_date" readonly="state != 'draft'"/>
+                            </group>
+                            <group>
+                                <field name="new_request_no" readonly="state != 'draft'"/>
+                                <field name="evacuation_bank"/>
+                                <field name="reason" readonly="state != 'draft'"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+
+                </form>
+            </field>
+        </record>
+
+        <record id="assignment_external_work_view_tree" model="ir.ui.view">
+            <field name="name">assignment_external_work_view_tree</field>
+            <field name="model">assignment.external.work</field>
+            <field name="arch" type="xml">
+                <list string="Request To Assignment External Work">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="employee_code"/>
+                    <field name="request_date"/>
+                    <field name="new_request_no"/>
+                    <field name="evacuation_bank"/>
+                    <field name="reason"/>
+                    <field name="state"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="assignment_external_work_action" model="ir.actions.act_window">
+            <field name="name">Request To Assignment External Work</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">assignment.external.work</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No Request To Assignment External Work
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

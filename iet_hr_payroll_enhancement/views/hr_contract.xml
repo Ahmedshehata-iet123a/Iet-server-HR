@@ -1,0 +1,168 @@
+<odoo>
+    <data>
+        <record id="hr_contract_form_inherit00" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='information']//group[@name='salary']" position="attributes">
+                    <attribute name="string">Salary Computation</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='information']//group[@name='salary']" position="inside">
+
+                    <label for="food_allowance"/>
+                    <div class="o_row">
+                        <field name="food_allowance" nolabel="1" readonly="0"/>
+                        <span>
+                            <field name="base_currency_id" invisible="1"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            / month
+                        </span>
+                    </div>
+
+                    <label for="phone_allowance"/>
+                    <div class="o_row">
+                        <field name="phone_allowance" nolabel="1" readonly="0"/>
+                        <span>
+                            <field name="base_currency_id" invisible="1"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            / month
+                        </span>
+                    </div>
+
+                    <label for="natural_of_work_allowance"/>
+                    <div class="o_row">
+                        <field name="natural_of_work_allowance" nolabel="1" readonly="0"/>
+                        <span>
+                            <field name="base_currency_id" invisible="1"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            / month
+                        </span>
+                    </div>
+
+                    <label for="total_salary"/>
+                    <div class="o_row" readonly="1">
+                        <field name="total_salary" nolabel="1" readonly="1"/>
+                        <span>
+                            <field name="base_currency_id" invisible="1"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            / month
+                        </span>
+                        <button string="Compute" name="compute_salary_from_history" type="object" class="btn-primary"/>
+                    </div>
+
+                    <label for="social_insurance_allowance"/>
+                    <div class="o_row">
+                        <field name="social_insurance_allowance" nolabel="1"/>
+                        <span>
+                            <field name="base_currency_id" invisible="1"
+                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>
+                            / month
+                        </span>
+                    </div>
+                </xpath>
+
+                <xpath expr="//label[@for='l10n_sa_housing_allowance']" position="before">
+                    <field name="housing_type_allowance" widget="selection"
+                           invisible="wage_type != 'monthly' or schedule_pay != 'monthly'"/>
+                </xpath>
+
+                <!--                <xpath expr="//label[@for='l10n_sa_housing_allowance']" position="attributes">-->
+                <!--                    <attribute name="invisible">wage_type != 'monthly' or schedule_pay != 'monthly'</attribute>-->
+                <!--                </xpath>-->
+<!--                <xpath expr="//field[@name='l10n_sa_housing_allowance']" position="attributes">-->
+<!--                    <attribute name="readonly">housing_type_allowance != 'monthly_housing'</attribute>-->
+<!--                </xpath>-->
+
+<!--                <xpath expr="//field[@name='wage']" position="attributes">-->
+<!--                    <attribute name="readonly">1</attribute>-->
+<!--                </xpath>-->
+                <!--                <xpath expr="//label[@for='l10n_sa_transportation_allowance']" position="attributes">-->
+                <!--                    <attribute name="invisible">wage_type != 'monthly' or schedule_pay != 'monthly'</attribute>-->
+                <!--                </xpath>-->
+<!--                <xpath expr="//field[@name='l10n_sa_transportation_allowance']" position="attributes">-->
+<!--                    <attribute name="readonly">1</attribute>-->
+<!--                </xpath>-->
+                <!--                <xpath expr="//label[@for='l10n_sa_other_allowances']" position="attributes">-->
+                <!--                    <attribute name="invisible">wage_type != 'monthly' or schedule_pay != 'monthly'</attribute>-->
+                <!--                </xpath>-->
+<!--                <xpath expr="//field[@name='l10n_sa_other_allowances']" position="attributes">-->
+<!--                    <attribute name="readonly">1</attribute>-->
+<!--                </xpath>-->
+                <xpath expr="//field[@name='number_of_sick_leaves']" position="after">
+                    <field name="number_of_absent_days"/>
+                </xpath>
+
+                <!--                <xpath expr="//page[@name='information']//group[@name='other_salary_details']" position="inside">-->
+                <!--                    <label for="social_insurance_allowance" invisible="wage_type != 'monthly' or schedule_pay != 'monthly'"/>-->
+                <!--                    <div class="o_row" invisible="wage_type != 'monthly' or schedule_pay != 'monthly'">-->
+                <!--                        <field name="social_insurance_allowance" nolabel="1"/>-->
+                <!--                        <span>-->
+                <!--                            <field name="base_currency_id" invisible="1"-->
+                <!--                                   options="{'no_create': True, 'no_edit': True, 'no_open': True}"/>-->
+                <!--                            / month-->
+                <!--                        </span>-->
+                <!--                    </div>-->
+                <!--                </xpath>-->
+
+                <xpath expr="//page[@name='information']" position="after">
+                    <page string="History" name="history">
+                        <field name="contract_history_line_ids" nolabel="1" readonly="0">
+                            <list editable="bottom">
+                                <!--                                <field name="link_id" invisible="1"/>-->
+                                <field name="employee_id" readonly="1"/>
+                                <field name="type" widget="selection"/>
+                                <field name="date"/>
+                                <field name="wage"/>
+                                <field name="transportation_allowance"/>
+                                <field name="housing_allowance"/>
+                                <field name="food_allowance"/>
+                                <field name="phone_allowance"/>
+                                <field name="natural_of_work_allowance"/>
+                                <field name="other_allowance"/>
+                                <field name="total_salary" column_invisible="1"/>
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+        <record id="salary_history_line_view_tree" model="ir.ui.view">
+            <field name="name">hr_contract_history_line_view_tree</field>
+            <field name="model">hr.contract.history.line</field>
+            <field name="arch" type="xml">
+                <list string="Salary History Line" editable="bottom">
+                    <field name="contract_id"/>
+                    <field name="employee_id"/>
+                    <field name="type" widget="selection"/>
+                    <field name="date"/>
+                    <field name="wage"/>
+                    <field name="transportation_allowance"/>
+                    <field name="housing_allowance"/>
+                    <field name="food_allowance"/>
+                    <field name="phone_allowance"/>
+                    <field name="natural_of_work_allowance"/>
+                    <field name="other_allowance"/>
+                    <field name="total_salary" column_invisible="1"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="salary_history_line_action" model="ir.actions.act_window">
+            <field name="name">Salary History line Action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.contract.history.line</field>
+            <field name="view_mode">list</field>
+        </record>
+
+        <menuitem id="salary_history_menu_action" name="Salary History" parent="hr.menu_config_employee"
+                  action="salary_history_line_action" sequence="100"/>
+
+
+    </data>
+</odoo>

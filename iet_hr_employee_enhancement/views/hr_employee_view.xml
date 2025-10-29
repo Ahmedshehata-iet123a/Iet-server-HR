@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_employee_filter_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.search</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <separator/>
+                    <field name="employee_number" string="Employee Number"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="hr_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='has_work_permit']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='country_id']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button class="oe_stat_button" type="object"
+                            name="action_view_location_transfers"
+                            icon="fa-retweet">
+                        <field string="Location Transfers" name="location_transfer_count" widget="statinfo"/>
+                    </button>
+                    <button class="oe_stat_button" type="object"
+                            name="action_view_family_information"
+                            icon="fa-heart">
+                        <field string="Family" name="employee_family_information_relation_count"
+                               widget="statinfo"/>
+                    </button>
+                    <button class="oe_stat_button" type="object"
+                            name="action_view_documents"
+                            icon="fa-folder-open">
+                        <field string="Related Documents" name="document_ids_count"
+                               widget="statinfo"/>
+                    </button>
+                    <button class="oe_stat_button" type="object"
+                            name="action_view_equipment"
+                            icon="fa-folder-open">
+                        <field string="Equipment" name="equipment_ids_count"
+                               widget="statinfo"/>
+                    </button>
+                </xpath>
+
+                <xpath expr="//field[@name='identification_id']" position="after">
+                    <field name="custom_employee_pin_number" invisible="1"/>
+                    <field name="end_date_identification"/>
+                    <field name="border_num"/>
+                    <field name="date_of_entry"/>
+                </xpath>
+                <xpath expr="//field[@name='passport_id']" position="after">
+                    <field name="end_date_passport"/>
+                </xpath>
+
+                <xpath expr="//page[@name='hr_settings']/group/group" position="inside">
+                    <field name="employee_type_2"/>
+                </xpath>
+
+                <xpath expr="//page[@name='public']/div/div/group[1]" position="before">
+                    <group string="GENERAL ORGANIZATION FOR SOCIAL INSURANCE">
+                        <field name="gosi_number"/>
+                        <field name="gosi_registration_date"/>
+                    </group>
+                </xpath>
+
+                <xpath expr="//field[@name='job_title']" position="before">
+                    <div class="o_row">
+                        <label for="arabic_name"/>
+                        <field name="arabic_name"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='work_location_id']" position="after">
+                    <field name="location"/>
+                </xpath>
+
+                <xpath expr="//field[@name='mobile_phone']" position="before">
+                    <field name="employee_number"/>
+
+                </xpath>
+
+                <xpath expr="//field[@name='work_email']" position="after">
+
+                    <field name="occupation"/>
+
+                </xpath>
+
+                <xpath expr="//page[@name='public']/div/div/group[1]" position="after">
+                    <field name="insurance_info_config" invisible="1"/>
+                    <field name="work_uniform_measurement_config" invisible="1"/>
+                    <!--                    <field name="return_date_lines_config" invisible="1"/>-->
+                    <group string="Insurance Information" invisible="not insurance_info_config">
+                        <field name="insurance_policy_number"/>
+                        <field name="insurance_medical"/>
+                        <field name="insurance_end_date"/>
+                    </group>
+                    <group string="Work Uniform Measurement" invisible="not work_uniform_measurement_config">
+                        <field name="shoe_size"/>
+                        <field name="shirt_size"/>
+                        <field name="pant_size"/>
+                    </group>
+
+                    <br/>
+                </xpath>
+                <xpath expr="//group[@name='departure']" position="inside">
+                </xpath>
+                <xpath expr="//page[@name='personal_information']//field[@name='bank_account_id']" position="replace">
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']//field[@name='birthday']" position="before">
+                    <separator name="birth_information" string="Birth Information"/>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']//field[@name='birthday']" position="after">
+                    <field name="employee_age"/>
+                    <field name="blood_type"/>
+                </xpath>
+                <xpath expr="//field[@name='gender']" position="replace">
+                    <field name="custom_gender" widget="selection_badge"/>
+                </xpath>
+                <xpath expr="//page[@name='personal_information']/group/group[1]" position="after">
+                    <group string="GOIS Information">
+                        <field name="gosi_number"/>
+                        <field name="gosi_registration_date"/>
+                        <field name="gosi_salary"/>
+                        <field name="Gosi_total_salary" readonly="1"/>
+                        <field name="employee_contribution_coverage_id"/>
+                        <field name="employee_contribution_amount"/>
+                    </group>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']/group/group[5]" position="inside">
+                    <separator name="employee_attachments" string="Employee Attachments"/>
+                    <field name="attachment_ids" widget='many2many_binary' string='Add Attachments'/>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']" position="after">
+                    <page name="bank_information" string="Bank Information" groups="hr.group_hr_user">
+                        <group>
+                            <group string='Bank Information' name="bank_information_group">
+                                <field name="bank_account_id" context="{'default_partner_id': work_contact_id}"
+                                       options="{'no_quick_create': True}" readonly="not id"/>
+                                <field name="bank_iban_number"/>
+                                <field name="bank_name"/>
+                                <field name="bank_code"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+                <xpath expr="//notebook" position="inside">
+                    <page name="other_details" string="Other Details">
+                        <div class="o_row">
+                            <label for="days_unpaid_time_off"/>
+                            <field name="days_unpaid_time_off"/>
+                        </div>
+                        <div class="o_row">
+                            <label for="service_period"/>
+                            <field name="service_period"/>
+                        </div>
+                        <div class="o_row">
+                            <button name="print_report" type="object" string="Remuneration Accrual"/>
+                        </div>
+                        <div class="o_row" style="margin-top:10px">
+                            <button name="print_report" type="object" string="leave Accrual" style="margin-top:20px"/>
+                        </div>
+                    </page>
+                </xpath>
+
+                <xpath expr="//page[@name='hr_settings']/group/group" position="inside">
+                    <field name="employee_custom_analytic_id" options="{'no_open':True,'no_create':True}"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <record id="set_employee_number_sequence_code" model="ir.actions.server">
+            <field name="name">Set Employee Number</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = records.action_set_employee_number_sequence_code()
+            </field>
+        </record>
+
+
+    </data>
+
+</odoo>

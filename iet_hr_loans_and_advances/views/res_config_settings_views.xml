@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">
+            Loans Config Views
+        </field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="15"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Loans" string="Loans" name="iet_hr_loans_and_advances">
+                    <block title="Loans" name="loans">
+                        <setting help="Allowing the entry of Loans Account Journal."
+                                 string="Account Journal"
+                                 title="Allowing the entry of Loans Account Journal.">
+                            <field name="journal_id_for_loans"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Account Journal For Reconcile Loans."
+                                     string="Account Journal For Reconcile"
+                                     title="Allowing the entry of Account Journal For Reconcile Loans.">
+                                <field name="journal_id_reconcile_for_loans"/>
+                            </setting>
+
+                        <setting help="Allowing the entry of Loans Account Debit."
+                                 string="Account Debit"
+                                 title="Allowing the entry of Loans Account Debit.">
+                            <field name="account_debit_for_loans"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Account Debit For Reconcile Loans."
+                                 string="Account Debit For Reconcile"
+                                 title="Allowing the entry of Account Debit For Reconcile Loans.">
+                            <field name="debit_reconcile_for_loans"/>
+                        </setting>
+                        <setting help="Allowing the entry of Loans Account Credit."
+                                 string="Account Credit"
+                                 title="Allowing the entry of Loans Account Credit.">
+                            <field name="account_credit_for_loans"/>
+                        </setting>
+                        <setting help="Allowing the entry of Account Credit For Reconcile Loans."
+                                 string="Account Credit For Reconcile"
+                                 title="Allowing the entry of Account Credit for Reconcile Loans.">
+                            <field name="credit_reconcile_for_loans"/>
+                        </setting>
+
+                    </block>
+
+                    <block title="Housing Advance" name="housing_advance">
+                        <setting help="Allowing the entry of Housing Advance Account Journal."
+                                 string="Account Journal"
+                                 title="Allowing the entry of Housing Advance Account Journal.">
+                            <field name="journal_id_for_housing_advance"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Account Journal For Reconcile Housing Advance."
+                                     string="Account Journal For Reconcile"
+                                     title="Allowing the entry of Account Journal For Reconcile Housing Advance.">
+                                <field name="journal_id_reconcile_for_housing_advance"/>
+                            </setting>
+
+                        <setting help="Allowing the entry of Housing Advance Account Debit."
+                                 string="Account Debit"
+                                 title="Allowing the entry of Housing Advance Account Debit.">
+                            <field name="account_debit_for_housing_advance"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Account Debit For Reconcile Housing Advance."
+                                 string="Account Debit For Reconcile"
+                                 title="Allowing the entry of Account Debit For Reconcile Housing Advance.">
+                            <field name="debit_reconcile_for_housing_advance"/>
+                        </setting>
+                        <setting help="Allowing the entry of Housing Advance Account Credit."
+                                 string="Account Credit"
+                                 title="Allowing the entry of Housing Advance Account Credit.">
+                            <field name="account_credit_for_housing_advance"/>
+                        </setting>
+                        <setting help="Allowing the entry of Account Credit For Reconcile Housing Advance."
+                                 string="Account Credit For Reconcile"
+                                 title="Allowing the entry of Account Credit for Reconcile Housing Advance.">
+                            <field name="credit_reconcile_for_housing_advance"/>
+                        </setting>
+
+                    </block>
+
+                    <block title="Salary Advances" name="salary_advance">
+                        <setting help="Allowing the entry of Salary Advances Account Journal."
+                                 string="Account Journal"
+                                 title="Allowing the entry of Salary Advances Account Journal.">
+                            <field name="journal_id_for_salary_advances"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Salary Advances Account Debit."
+                                 string="Account Debit"
+                                 title="Allowing the entry of Salary Advances Account Debit.">
+                            <field name="account_debit_for_salary_advances"/>
+                        </setting>
+
+                        <setting help="Allowing the entry of Salary Advances Account Credit."
+                                 string="Account Credit"
+                                 title="Allowing the entry of Salary Advances Account Credit.">
+                            <field name="account_credit_for_salary_advances"/>
+                        </setting>
+
+
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="res_config_settings_action" model="ir.actions.act_window">
+        <field name="name">Loans Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'iet_hr_loans_and_advances'}</field>
+    </record>
+
+
+    <menuitem id="menu_configuration_loan_advance_conf"
+              name="Configuration"
+              parent="iet_hr_loans_and_advances.menu_loans_main_menu"
+              sequence="15"/>
+    <menuitem id="menu_configuration_loan_advance_action"
+              name="Settings"
+              parent="iet_hr_loans_and_advances.menu_configuration_loan_advance_conf"
+              action="res_config_settings_action"
+              sequence="7"/>
+
+
+</odoo>

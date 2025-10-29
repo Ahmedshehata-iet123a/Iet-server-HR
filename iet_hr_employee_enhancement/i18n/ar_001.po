@@ -1,0 +1,1731 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* iet_hr_employee_enhancement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-13 09:12+0000\n"
+"PO-Revision-Date: 2025-02-13 09:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#, python-format
+msgid "00000"
+msgstr ""
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__blood_type__ab+
+msgid "AB+"
+msgstr ""
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__blood_type__ab-
+msgid "AB-"
+msgstr ""
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__accommodation
+msgid "Accommodation"
+msgstr "الإقامة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__accommodation_cost
+msgid "Accommodation Cost"
+msgstr "تكلفة الإقامة"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_account_paid
+msgid "Account Paid Officer"
+msgstr "موظف الحسابات المدفوعة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_needaction
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__is_emp_active
+msgid "Active"
+msgstr "نشط"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.server,name:iet_hr_employee_enhancement.ir_cron_scheduler_contract_action_ir_actions_server
+msgid "Active Expire Contracts"
+msgstr "عقود منتهية الصلاحية النشطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_exception_decoration
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_type_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Add Attachments"
+msgstr "إضافة مرفقات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__addition_information
+msgid "Addition Information"
+msgstr "معلومات إضافية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__member_age
+msgid "Age"
+msgstr "العمر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__air_ticket
+msgid "Air Ticket"
+msgstr "تذكرة طيران"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.allowance_tags_action
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.allowance_tags_action_menu
+msgid "Allowance Tags"
+msgstr "علامات البدل"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.res_config_settings_view_form
+msgid "Allowing the entry of employee insurance information"
+msgstr "السماح بإدخال معلومات تأمين الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.res_config_settings_view_form
+msgid "Allowing the entry of employee insurance information."
+msgstr "السماح بإدخال معلومات تأمين الموظف."
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.res_config_settings_view_form
+msgid ""
+"Allowing the entry of work uniform measurement information for employees"
+msgstr "السماح بإدخال معلومات قياس زي العمل للموظفين"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.res_config_settings_view_form
+msgid ""
+"Allowing the entry of work uniform measurement information for employees."
+msgstr "السماح بإدخال معلومات قياس زي العمل للموظفين."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__emp_analytic_lines_counter
+msgid "Analytic Lines"
+msgstr "الخطوط التحليلية"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_transfer_view_form
+msgid "Approve"
+msgstr "موافقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__location_transfer__state__approve
+msgid "Approved"
+msgstr "موافق عليه"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__arabic_name
+msgid "Arabic Name"
+msgstr "الاسم العربي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__attachment
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__attachment_ids
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_attachment_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__automatic_contract_renewal
+msgid "Automatic Contract Renewal"
+msgstr "تجديد العقد التلقائي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__badge_number
+msgid "Badge Number"
+msgstr "رقم الشارة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_account_move_line__x_balance
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__balance
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__bank_code
+msgid "Bank Code"
+msgstr "كود البنك"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__bank_iban_number
+msgid "Bank Iban Number"
+msgstr "رقم الآيبان البنكي"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Bank Information"
+msgstr "معلومات البنك"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__bank_name
+msgid "Bank Name"
+msgstr "اسم البنك"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Birth Information"
+msgstr "معلومات الميلاد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__birthday
+msgid "Birthday"
+msgstr "تاريخ الميلاد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__blood_type
+msgid "Blood Type"
+msgstr "فصيلة الدم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__border_num
+msgid "Border Number"
+msgstr "رقم الحدود"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__car_number
+msgid "Car Number"
+msgstr "رقم السيارة"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Check List"
+msgstr "قائمة الفحص"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.server,name:iet_hr_employee_enhancement.ir_cron_check_employee_ir_actions_server
+msgid "Check the expiration of employee contracts and identities."
+msgstr "تحقق من انتهاء صلاحية عقود وهويات الموظفين."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__company_car
+msgid "Company Car"
+msgstr "سيارة الشركة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_res_config_settings
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.server,name:iet_hr_employee_enhancement.employee_notification_every_day_ir_actions_server
+msgid "Contract Notification"
+msgstr "إشعار العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__contract_period
+msgid "Contract Period"
+msgstr "فترة العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Contract Status"
+msgstr "حالة العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__contract_status
+msgid "Contract_status"
+msgstr "حالة العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__cost
+msgid "Cost"
+msgstr "التكلفة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.res_country_custom
+msgid "Country"
+msgstr "الدولة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__coustdian
+msgid "Coustdian"
+msgstr "مراقبة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.server,name:iet_hr_employee_enhancement.ir_cron_scheduler_action_to_create_new_analytic_for_emp_ir_actions_server
+msgid "Create analytic for Employees"
+msgstr "إنشاء تحليل للموظفين"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__create_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__create_uid
+msgid "Created by"
+msgstr "تم الإنشاء بواسطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__create_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__create_date
+msgid "Created on"
+msgstr "تاريخ الإنشاء"
+
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__credit
+msgid "Credit"
+msgstr "رصيد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__currency_id
+msgid "Currency"
+msgstr "عملة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__current_year
+msgid "Current Year"
+msgstr "السنة الحالية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_family_information_relation
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__location_transfer_relation
+msgid "Data"
+msgstr "بيانات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__location_date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__member_date_of_birth
+msgid "Date Of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__date_of_entry
+msgid "Date of entry"
+msgstr "تاريخ الدخول"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Days Counter"
+msgstr "عداد الأيام"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__days_unpaid_time_off
+msgid "Days Unpaid Time Off"
+msgstr "أيام الإجازة غير المدفوعة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__debit
+msgid "Debit"
+msgstr "مدين"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__department
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__equipment__used_by__department
+msgid "Department"
+msgstr "قسم"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_department_manager
+msgid "Department Manager"
+msgstr "مدير القسم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__departure_reason
+msgid "Departure Reason"
+msgstr "سبب المغادرة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__destination_location
+msgid "Destination Location"
+msgstr "موقع الوجهة"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_direct_manager
+msgid "Direct Manager"
+msgstr "المدير المباشر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__display_name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__document_ids
+msgid "Document"
+msgstr "وثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_expiry_date
+msgid "Document Expiry Date"
+msgstr "تاريخ انتهاء الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_expiry_date_alart
+msgid "Document Expiry Date Alart"
+msgstr "تنبيه تاريخ انتهاء الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_issue_date
+msgid "Document Issue Date"
+msgstr "تاريخ إصدار الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_stages
+msgid "Document Stages"
+msgstr "مراحل الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_type_2
+msgid "Document Type"
+msgstr "نوع الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__document_ids_count
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__equipment_ids_count
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.document_line_view_tree
+msgid "Documents"
+msgstr "المستندات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__relational__doughtier
+msgid "Doughtier"
+msgstr "ابنة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__location_transfer__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_hr_employee
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_account_move_line__employee_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__document_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__employee_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__relation_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__employee
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__relation_id3
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__equipment__used_by__employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_age
+msgid "Employee Age"
+msgstr "عمر الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_account_move_line__employee_analytic_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_custom_analytic_id
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.employee_analytic_in_employee_moduel_report_menu
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.employee_analytic_report_menu
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.employee_analytic_report_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.employee_analytic_report_view_tree
+msgid "Employee Analytic"
+msgstr "التحليل الوظيفي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.account_move_line_preview_action
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.account_move_line_view_tree_preview
+msgid "Employee Analytic Lines"
+msgstr "خطوط التحليل الوظيفي"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Employee Attachments"
+msgstr "مرفقات الموظف"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_bank_iban_number
+#, python-format
+msgid "Employee Bank Iban Number already exists!"
+msgstr "رقم IBAN المصرفي للموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.employee_contribution_contract_action
+#: model:ir.model,name:iet_hr_employee_enhancement.model_employee_contribution
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__name
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.employee_contribution_contract_menu
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_contribution_amount
+msgid "Employee Contribution Amount"
+msgstr "مبلغ مساهمة الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.res_config_settings_view_form
+msgid "Employee Features"
+msgstr "ميزات الموظف"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_gosi_number
+#, python-format
+msgid "Employee GOSI Number already exists!"
+msgstr "رقم التأمينات الاجتماعية للموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_identification_id
+#, python-format
+msgid "Employee Identification already exists!"
+msgstr "رقم الهوية للموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__custom_employee_pin_number
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_number
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.view_employee_filter_inherit
+msgid "Employee Number"
+msgstr "رقم الموظف"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_employee_number
+#, python-format
+msgid "Employee Number already exists!"
+msgstr "رقم الموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.employee_analytic_report_action
+#: model:ir.actions.report,name:iet_hr_employee_enhancement.employee_excel_action
+msgid "Employee Report"
+msgstr "تقرير الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_type_2
+msgid "Employee Type"
+msgstr "نوع الموظف"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_work_email
+#, python-format
+msgid "Employee Work Email already exists!"
+msgstr "البريد الإلكتروني للعمل للموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: model:ir.model.constraint,message:iet_hr_employee_enhancement.constraint_hr_employee_unique_work_phone
+#, python-format
+msgid "Employee Work Phone already exists!"
+msgstr "رقم الهاتف للعمل للموظف موجود بالفعل!"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_contribution_coverage_id
+msgid "Employee contribution Coverage"
+msgstr "تغطية مساهمة الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_employee_family_member
+msgid "Employee family Member"
+msgstr "أفراد عائلة الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.menu_employee_report
+msgid "Employees Report Excell"
+msgstr "تقرير الموظفين إكسل"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__date_end
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__end_notice_date
+msgid "End Notice Date"
+msgstr "تاريخ نهاية الإشعار"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_hr_contract__date_end
+msgid "End date of the contract (if it's a fixed-term contract)."
+msgstr "تاريخ انتهاء العقد (إذا كان عقدًا محدد المدة)."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.equipment_action
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__equipment_ids
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.equipment_menu_item
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.equipment_view_tree
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Equipment"
+msgstr "المعدات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__name
+msgid "Equipment Name"
+msgstr "اسم المعدات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__is_cheked
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__state__expired
+msgid "Expired"
+msgstr "منتهي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__contract_status__family
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.employee_family_member_view_tree
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Family"
+msgstr "عائلة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__employee_family_information_relation_count
+msgid "Family Information"
+msgstr "معلومات الأسرة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__gender_member__female
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__followers__gender__female
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__custom_gender__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_finance_manager
+msgid "Finance Manager"
+msgstr "مدير المالية"
+
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_followers
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__followers_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__followers_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_follower_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_partner_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__activity_type_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "GENERAL ORGANIZATION FOR SOCIAL INSURANCE"
+msgstr "الهيئة العامة للتأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "GOIS Information"
+msgstr "معلومات الهيئة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__gosi_salary_information_update
+msgid "GOSI Salary Information Updated"
+msgstr "تم تحديث معلومات راتب التأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__gender_member
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__gender
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__custom_gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_general_manager
+msgid "General Manager"
+msgstr "المدير العام"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__generate_daily_documents
+msgid "Generate Daily Documents"
+msgstr "إنشاء مستندات يومية"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Get Leave Days"
+msgstr "احصل على أيام الإجازة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__gosi_number
+msgid "Gosi Number"
+msgstr "رقم التأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__gosi_registration_date
+msgid "Gosi Registration Date"
+msgstr "تاريخ تسجيل التأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__gosi_salary
+msgid "Gosi Salary"
+msgstr "راتب التأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__Gosi_total_salary
+msgid "Gosi Total Salary"
+msgstr "إجمالي راتب التأمينات الاجتماعية"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_hr_manager
+msgid "HR Manager"
+msgstr "مدير الموارد البشرية"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_hr_officer
+msgid "HR Officer"
+msgstr "موظف الموارد البشرية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__has_message
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__has_message
+msgid "Has Message"
+msgstr "لديه رسالة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.module.category,name:iet_hr_employee_enhancement.hr_authorities_category
+msgid "Human Resources Access Rights"
+msgstr "حقوق الوصول للموارد البشرية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__relational__husband
+msgid "Husband"
+msgstr "زوج"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__id
+msgid "ID"
+msgstr "الرقم التعريفي"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_it_manager
+msgid "IT Manager"
+msgstr "مدير تكنولوجيا المعلومات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_exception_icon
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__activity_exception_icon
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "أيقونة للإشارة إلى نشاط استثنائي."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__id_number
+msgid "Id Number"
+msgstr "رقم الهوية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__attachment_identification
+msgid "Identification Attachment"
+msgstr "مرفق الهوية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__identification_id
+msgid "Identification No"
+msgstr "رقم الهوية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__message_needaction
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديدها، فإن الرسائل الجديدة تتطلب انتباهك."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__message_has_sms_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__message_has_error
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديدها، فإن بعض الرسائل تحتوي على خطأ في التسليم."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_hr_contract__is_emp_active
+msgid ""
+"If the active field is set to False, it will allow you to hide the resource "
+"record without removing it."
+msgstr "إذا تم تعيين حقل النشط على خطأ، فسيسمح لك بإخفاء سجل المورد دون حذفه."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__include_in_ticket
+msgid "Include In Ticket"
+msgstr "تضمين في التذكرة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__insurance_info_config
+msgid "Insurance Info Config"
+msgstr "إعداد معلومات التأمين"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_res_config_settings__hr_employee_insurance_information
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Insurance Information"
+msgstr "معلومات التأمين"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__insurance_policy_number
+msgid "Insurance Policy Number"
+msgstr "رقم بوليصة التأمين"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__insurance_end_date
+msgid "Insurance Termination Date"
+msgstr "تاريخ انتهاء التأمين"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_inventory_manager
+msgid "Inventory Manager"
+msgstr "مدير الجرد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_is_follower
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_is_follower
+msgid "Is Follower"
+msgstr "مراقب"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.joining_type_action
+#: model:ir.model,name:iet_hr_employee_enhancement.model_joining_type
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__joining_type_id
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.joining_type_menu
+msgid "Joining Type"
+msgstr "نوع الانضمام"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__last_start_work_date
+msgid "Last Start Work Date"
+msgstr "آخر تاريخ بدء العمل"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__write_uid
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__write_date
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__employee_type_2__local
+msgid "Local"
+msgstr "محلي"
+
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.location_action
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__location
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__location
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__equipment__used_by__location
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.location_menu_item
+msgid "Location"
+msgstr "الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_coordinates
+msgid "Location Coordinates"
+msgstr "إحداثيات الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_id
+msgid "Location Id"
+msgstr "معرف الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_manager
+msgid "Location Manager"
+msgstr "مدير الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__name
+msgid "Location Name"
+msgstr "اسم الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_store_keeper
+msgid "Location Store Keeper"
+msgstr "أمين مخزن الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_timekeeper
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_view_tree
+msgid "Location Timekeeper"
+msgstr "مراقب الوقت للموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_timekeeper_2
+msgid "Location Timekeeper 2"
+msgstr "مراقب الوقت للموقع 2"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_location_transfer
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_transfer_view_tree
+msgid "Location Transfer"
+msgstr "نقل الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__location_transfer_count
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Location Transfers"
+msgstr "نقل المواقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__location_type
+msgid "Location Type"
+msgstr "نوع الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__gender_member__male
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__followers__gender__male
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__custom_gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__member_medical_insurance
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__medical_insurance
+msgid "Medical Insurance"
+msgstr "التأمين الطبي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__medical_insurance_members
+msgid "Medical Insurance Members"
+msgstr "أعضاء التأمين الطبي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__insurance_medical
+msgid "Medical Insurance Scheme"
+msgstr "نظام التأمين الطبي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__medical_insurance_amount
+msgid "Medical Insurance Value"
+msgstr "قيمة التأمين الطبي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_has_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__model
+msgid "Model"
+msgstr "نموذج"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#, python-format
+msgid "Mr./Ms."
+msgstr "السيد/السيدة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__my_activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "موعد نشاطي النهائي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_allowance_tags__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_type_custom__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_analytic_report__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__equipment_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_followers__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__name
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_religion__name
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.account_move_line_view_tree_preview
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.document_line_view_form
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_transfer_view_form
+msgid "Name"
+msgstr "الاسم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__document_stages__near_expiry
+msgid "Near Expiry"
+msgstr "قريب من انتهاء الصلاحية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__state__neer_expiry
+msgid "Neer Expiry"
+msgstr "قريب من انتهاء الصلاحية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_calendar_event_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "الحدث التالي في تقويم الأنشطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_date_deadline
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_summary
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_type_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__automatic_contract_renewal__no
+msgid "No"
+msgstr "لا"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__notice_period
+msgid "Notice Period"
+msgstr "فترة الإشعار"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__num_of_years_for_contract
+msgid "Num Of Years For Contract"
+msgstr "عدد السنوات للعقد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__number_of_sick_leaves
+msgid "Number Of Sick Leaves"
+msgstr "عدد أيام الإجازات المرضية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__number_of_tickets
+msgid "Number Of Tickets"
+msgstr "عدد التذاكر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__number_of_unpaid_days
+msgid "Number Of Unpaid Days"
+msgstr "عدد الأيام غير المدفوعة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_needaction_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_has_error_counter
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__message_needaction_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__message_has_error_counter
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي تحتوي على خطأ في التسليم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__occupation
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__occupation
+msgid "Occupation"
+msgstr "المهنة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__num_of_years_for_contract__one
+msgid "One Year"
+msgstr "سنة واحدة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__original_location
+msgid "Original Location"
+msgstr "الموقع الأصلي"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Other Benefits"
+msgstr "فوائد أخرى"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Other Details"
+msgstr "تفاصيل أخرى"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__pant_size
+msgid "Pant Size"
+msgstr "حجم البنطلون"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__attachment_passport
+msgid "Passport Attachment"
+msgstr "مرفق جواز السفر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__end_date_passport
+msgid "Passport End Date"
+msgstr "تاريخ انتهاء جواز السفر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__passport_number
+msgid "Passport Number"
+msgstr "رقم جواز السفر"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__probation_end_date
+msgid "Probation End Date"
+msgstr "تاريخ انتهاء فترة التجربة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__probation_period
+msgid "Probation Period"
+msgstr "فترة التجربة"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_contract_form_inherit
+msgid "Probation Period (Days)"
+msgstr "فترة التجربة (أيام)"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.equipment_view_form
+msgid "Product Information"
+msgstr "معلومات المنتج"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__purchase_date
+msgid "Purchase Date"
+msgstr "تاريخ الشراء"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__qiwa_contract_approved
+msgid "Qiwa Contract Approved By Employee"
+msgstr "عقد قوى معتمد من قبل الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__qiwa_contract_create
+msgid "Qiwa Contract Create"
+msgstr "إنشاء عقد قوى"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__reason_end_contract_id
+msgid "Reason End Contract"
+msgstr "سبب انتهاء العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.reason_end_contract_action
+#: model:ir.model,name:iet_hr_employee_enhancement.model_reason_end_contract
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__name
+#: model:ir.ui.menu,name:iet_hr_employee_enhancement.reason_end_contract_menu
+msgid "Reason End Of Contract"
+msgstr "سبب انتهاء العقد"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Related Documents"
+msgstr "المستندات ذات الصلة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__employee_id
+msgid "Related Employee"
+msgstr "الموظف ذو الصلة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_family_member__relational
+msgid "Relational"
+msgstr "علاقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_religion
+msgid "Religion"
+msgstr "الديانة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_employee__employee_type_2__remote
+msgid "Remote"
+msgstr "عن بُعد"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Remuneration Accrual"
+msgstr "استحقاق المكافأة"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.employee_analytic_report_view_form
+msgid "Report Items"
+msgstr "عناصر التقرير"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.act_window,name:iet_hr_employee_enhancement.view_country_inherit_action
+msgid "Res Country"
+msgstr "الدولة"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_transfer_view_form
+msgid "Reset to draft"
+msgstr "إعادة تعيين إلى مسودة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__activity_user_id
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__document_stages__running
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__state__running
+msgid "Running"
+msgstr "جاري"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__message_has_sms_error
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم رسالة نصية"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.location_transfer_view_form
+msgid "SUBMIT"
+msgstr "إرسال"
+
+#. module: iet_hr_employee_enhancement
+#: model:res.groups,name:iet_hr_employee_enhancement.group_sales_manager
+msgid "Sales Manager"
+msgstr "مدير المبيعات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__scrap_date
+msgid "Scrap Date"
+msgstr "تاريخ الخردة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__serial_number
+msgid "Serial Number"
+msgstr "رقم السلسلة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__service_period
+msgid "Service Period"
+msgstr "فترة الخدمة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.actions.server,name:iet_hr_employee_enhancement.set_employee_number_sequence_code
+msgid "Set Employee Number"
+msgstr "تعيين رقم الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__shirt_size
+msgid "Shirt Size"
+msgstr "حجم القميص"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__shoe_size
+msgid "Shoe Size"
+msgstr "حجم الحذاء"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__contract_status__single
+msgid "Single"
+msgstr "أعزب"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_hr_employee__bank_code
+msgid "Sometimes called BIC or Swift."
+msgstr "يُسمى أحيانًا BIC أو Swift."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__relational__son
+msgid "Son"
+msgstr "ابن"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__start_notice_date
+msgid "Start Notice Date"
+msgstr "تاريخ بدء الإشعار"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__state
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__activity_state
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة بناءً على الأنشطة\n"
+"متأخر: تاريخ الاستحقاق قد مر بالفعل\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"مخطط: الأنشطة المستقبلية."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__location_transfer__state__submit
+msgid "Submit"
+msgstr "إرسال"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__supplier
+msgid "Supplier"
+msgstr "المورد"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#, python-format
+msgid "The bank IBAN number must contain 24 characters."
+msgstr "يجب أن يحتوي رقم IBAN المصرفي على 24 حرفًا."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__air_ticket_cost
+msgid "Ticket Cost"
+msgstr "تكلفة التذكرة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_contract__total_salary
+msgid "Total Salary"
+msgstr "إجمالي الراتب"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__transfer_of_responsibility_records
+msgid "Transfer Of Responsibility Records"
+msgstr "سجلات نقل المسؤولية"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__num_of_years_for_contract__two
+msgid "Two Years"
+msgstr "سنتان"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__name
+msgid "Type"
+msgstr "النوع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__activity_exception_decoration
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__used_by
+msgid "Used By"
+msgstr "مستخدم بواسطة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__location_user_id
+msgid "User ID"
+msgstr "معرف المستخدم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__warranty_expiration_date
+msgid "Warranty Expiration Date"
+msgstr "تاريخ انتهاء الضمان"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_document_line__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_employee_contribution__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_equipment__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_joining_type__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_location_transfer__website_message_ids
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_reason_end_contract__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_document_line__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_employee_contribution__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_equipment__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_joining_type__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_location_transfer__website_message_ids
+#: model:ir.model.fields,help:iet_hr_employee_enhancement.field_reason_end_contract__website_message_ids
+msgid "Website communication history"
+msgstr "تاريخ التواصل على الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__employee_family_member__relational__wife
+msgid "Wife"
+msgstr "زوجة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_res_config_settings__hr_employee_work_uniform_measurement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "Work Uniform Measurement"
+msgstr "قياس الزي الرسمي"
+
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__work_uniform_measurement_config
+msgid "Work Uniform Measurement Config"
+msgstr "إعداد قياس الزي الرسمي"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__hr_contract__automatic_contract_renewal__yes
+msgid "Yes"
+msgstr "نعم"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_allowance_tags
+msgid "allowance.tags"
+msgstr "علامات المخصصات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_document_line
+msgid "document.line"
+msgstr "سطر الوثيقة"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_document_type_custom
+msgid "document.type.custom"
+msgstr "نوع الوثيقة المخصص"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_employee_analytic_report
+msgid "employee.analytic.report"
+msgstr "تقرير تحليل الموظف"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_equipment
+msgid "equipment"
+msgstr "المعدات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields.selection,name:iet_hr_employee_enhancement.selection__document_line__document_stages__expired
+msgid "expired"
+msgstr "منتهي"
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#, python-format
+msgid "has only 3 month left until his contract expires."
+msgstr "تبقى 3 أشهر فقط حتى ينتهي عقده."
+
+#. module: iet_hr_employee_enhancement
+#. odoo-python
+#: code:addons/iet_hr_employee_enhancement/models/hr_employee.py:0
+#, python-format
+msgid "has only 6 month left until his identification number expires."
+msgstr "تبقى 6 أشهر فقط حتى تنتهي صلاحية رقم هويته."
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model.fields,field_description:iet_hr_employee_enhancement.field_hr_employee__end_date_identification
+msgid "identification End Date"
+msgstr "تاريخ انتهاء الهوية"
+
+#. module: iet_hr_employee_enhancement
+#: model_terms:ir.ui.view,arch_db:iet_hr_employee_enhancement.hr_employee_form_inherit
+msgid "leave Accrual"
+msgstr "استحقاق الإجازات"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_location
+msgid "location"
+msgstr "الموقع"
+
+#. module: iet_hr_employee_enhancement
+#: model:ir.model,name:iet_hr_employee_enhancement.model_report_iet_hr_employee_enhancement_employee_report_excel
+msgid "report.iet_hr_employee_enhancement.employee_report_excel"
+msgstr "التقرير.تقرير_الموظف_إكسل"

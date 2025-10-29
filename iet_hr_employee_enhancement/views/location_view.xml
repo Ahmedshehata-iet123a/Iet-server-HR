@@ -1,0 +1,110 @@
+<odoo>
+    <data>
+        <record id="location_view_form" model="ir.ui.view">
+            <field name="name">Location View Form</field>
+            <field name="model">location</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="location_type"/>
+                                <field name="location_timekeeper_2" string="Location Timekeeper"/>
+                                <field name="generate_daily_documents"/>
+                            </group>
+                            <group>
+                                <field name="location_id"/>
+                                <field name="location_manager"/>
+                                <field name="location_store_keeper"/>
+                                <field name="location_coordinates"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+        <record id="location_view_tree" model="ir.ui.view">
+            <field name="name">Location View Tree</field>
+            <field name="model">location</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="location_id"/>
+                    <field name="location_type"/>
+                    <field name="location_manager"/>
+                    <field name="location_timekeeper_2" string="Location Timekeeper"/>
+                    <field name="location_store_keeper"/>
+                    <field name="location_coordinates"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="location_action" model="ir.actions.act_window">
+            <field name="name">Location</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">location</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record id="location_transfer_view_form" model="ir.ui.view">
+            <field name="name">location_transfer_view_form</field>
+            <field name="model">location.transfer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_submit" type="object" string="SUBMIT" class="oe_highlight"
+                                invisible="state != 'draft'"
+                        />
+                        <button name="action_approve" type="object" string="Approve" class="oe_highlight"
+                                invisible="state != 'submit'"
+                        />
+                        <button name="action_draft" type="object" string="Reset to draft" class="oe_highlight"
+                                invisible="state == 'draft'"
+                        />
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <h1 class="d-flex flex-row align-items-center">
+                            <field name="name" placeholder="Name"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="relation_id3" required="state == 'submit'"/>
+                                <field name="original_location" required="state == 'submit'"/>
+                                <field name="location_user_id" required="state == 'submit'"/>
+                            </group>
+                            <group>
+                                <field name="location_date" required="state == 'submit'"/>
+                                <field name="destination_location" required="state == 'submit'"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="location_transfer_view_tree" model="ir.ui.view">
+            <field name="name">location_transfer_view_tree</field>
+            <field name="model">location.transfer</field>
+            <field name="arch" type="xml">
+                <list string="Location Transfer">
+                    <field name="name"/>
+                    <field name="relation_id3"/>
+                    <field name="location_date"/>
+                    <field name="original_location"/>
+                    <field name="destination_location"/>
+                    <field name="location_user_id"/>
+                </list>
+            </field>
+        </record>
+
+        <menuitem id="location_menu_item" name="Location" parent="hr.menu_config_employee" action="location_action"
+                  sequence="1"/>
+
+
+    </data>
+</odoo>

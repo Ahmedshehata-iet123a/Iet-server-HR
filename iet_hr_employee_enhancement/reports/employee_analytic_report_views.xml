@@ -1,0 +1,116 @@
+<odoo>
+  <data>
+
+
+    <record id="account_move_line_preview_action" model="ir.actions.act_window">
+      <field name="name">Employee Analytic Lines</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.move.line</field>
+      <field name="view_mode">list</field>
+      <!--        <field name="view_ids" eval="[(5, 0, 0),(0, 0, {'view_mode': 'tree', 'view_id': ref('account_move_line_view_tree_preview')})]"/>-->
+
+    </record>
+
+    <record id="account_move_line_view_tree_preview" model="ir.ui.view">
+      <field name="name">account.move.line.view.tree.preview</field>
+      <field name="model">account.move.line</field>
+      <field name="arch" type="xml">
+        <list string="Employee Analytic Lines">
+          <field name="employee_analytic_id" string="Name"/>
+          <field name="employee_id"/>
+          <field name="account_id"/>
+          <field name="debit"/>
+          <field name="credit"/>
+          <field name="x_balance"/>
+        </list>
+      </field>
+    </record>
+
+
+    <record id="account_move_form_inherit" model="ir.ui.view">
+      <field name="name">account.move.form.inherit</field>
+      <field name="model">account.move</field>
+      <field name="inherit_id" ref="account.view_move_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='line_ids']/list//field[@name='name']" position="after">
+          <field name="employee_analytic_id" optional="show"/>
+        </xpath>
+      </field>
+    </record>
+    <record id="account_move_line_form_inherit" model="ir.ui.view">
+      <field name="name">account.move.line.form.inherit</field>
+      <field name="model">account.move.line</field>
+      <field name="inherit_id" ref="account.view_move_line_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='move_id']" position="after">
+          <field name="employee_analytic_id"/>
+        </xpath>
+      </field>
+    </record>
+    <record id="employee_analytic_report_view_form" model="ir.ui.view">
+      <field name="name">employee.analytic.report.view.form</field>
+      <field name="model">employee.analytic.report</field>
+      <field name="arch" type="xml">
+        <form string="Employee Analytic">
+          <sheet>
+            <div class="oe_button_box" name="button_box">
+              <button type="object" name="action_open_analytic_lines" class="oe_stat_button"
+                      icon="fa-list" >
+<!--                attrs="{'invisible': [('emp_analytic_lines_counter','=',0)]}"-->
+                <field name="emp_analytic_lines_counter" string="Report Items" widget="statinfo"></field>
+              </button>
+            </div>
+            <group>
+              <group>
+                <label for="name" string=""/>
+                <div class="oe_title">
+                  <h1>
+                    <field name="name"/>
+                  </h1>
+                </div>
+
+                <field name="employee_id"/>
+              </group>
+              <group>
+                <field name="company_id" invisible="1"/>
+                <field name="debit"/>
+                <field name="credit"/>
+                <field name="balance"/>
+              </group>
+
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record id="employee_analytic_report_view_tree" model="ir.ui.view">
+      <field name="name">employee.analytic.report.view.tree</field>
+      <field name="model">employee.analytic.report</field>
+      <field name="arch" type="xml">
+        <list string="Employee Analytic">
+          <field name="name"/>
+          <field name="employee_id"/>
+          <field name="debit"/>
+          <field name="credit"/>
+          <field name="balance"/>
+        </list>
+      </field>
+    </record>
+    <record id="employee_analytic_report_action" model="ir.actions.act_window">
+      <field name="name">Employee Report</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">employee.analytic.report</field>
+      <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="employee_analytic_report_menu" name="Employee Analytic"
+              parent="account.menu_analytic_accounting"
+              action="employee_analytic_report_action" sequence="1"
+    />
+    <menuitem id="employee_analytic_in_employee_moduel_report_menu"
+              name="Employee Analytic"
+              parent="hr.menu_human_resources_configuration"
+              action="employee_analytic_report_action"
+              sequence="1"
+    />
+  </data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="group_get_approve_and_fields" model="res.groups">
+      <field name="name">See Approve time off and Fields</field>
+      <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="group_get_fields" model="res.groups">
+      <field name="name">See Dates in Accrual Leave Information</field>
+      <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+  </data>
+</odoo>
