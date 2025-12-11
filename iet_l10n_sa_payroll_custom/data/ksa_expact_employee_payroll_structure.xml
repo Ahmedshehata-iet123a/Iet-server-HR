@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="l10n_sa_hr_payroll.ksa_expat_housing_allowance_salary_rule" model="hr.salary.rule">
+            <field name="amount_python_compute"><![CDATA[
+contract_date = contract.date_start
+payslip_date = payslip.date_to
+payslip_day = payslip_date.day
+result = 0
+if contract_date.year == payslip_date.year and contract_date.month == payslip_date.month:
+    # تم تصحيح الحساب ودمج +1 في نفس السطر
+    calc_day = payslip_day if payslip_day <= 30 else 30
+    working_days = (calc_day - contract_date.day) + 1
+    result = round(working_days * (contract.l10n_sa_housing_allowance / 30))
+else:
+    result = round(contract.l10n_sa_housing_allowance)
+            ]]></field>
+        </record>
+
+        <record id="l10n_sa_hr_payroll.ksa_expat_transportation_allowance_salary_rule" model="hr.salary.rule">
+            <field name="amount_python_compute"><![CDATA[
+contract_date = contract.date_start
+payslip_date = payslip.date_to
+payslip_day = payslip_date.day
+result = 0
+if contract_date.year == payslip_date.year and contract_date.month == payslip_date.month:
+    calc_day = payslip_day if payslip_day <= 30 else 30
+    working_days = (calc_day - contract_date.day) + 1
+    result = round(working_days * (contract.l10n_sa_transportation_allowance / 30))
+else:
+    result = round(contract.l10n_sa_transportation_allowance)
+            ]]></field>
+        </record>
+
+
+        <record id="l10n_sa_hr_payroll.ksa_expat_end_of_service_salary_rule" model="hr.salary.rule">
+            <field name="amount_python_compute"><![CDATA[
+total_days = 0
+result = 0
+dep_name = employee.departure_reason_id.name.lower() if employee.departure_reason_id.name else ''
+
+if "resigned" in dep_name:
+    if employee.custom_duration0_due_less_than5 < 720:
+        total_days = 0
+    else:
+        years_service = employee.custom_total0_year0 / 360.0
+        if 2 <= years_service < 5:
+            total_days += round(employee.amount_of_service_bonus_days / 3)
+        elif 5 <= years_service < 10:
+            service_bonus_days_first_5 = 75 * (contract.total_salary / 30)
+            service_bonus_days_after_5 = employee.amount_of_service_bonus_days - service_bonus_days_first_5
+            total_days += round((service_bonus_days_first_5 / 3) + (service_bonus_days_after_5 * 2/3))
+        elif years_service >= 10:
+            total_days = employee.amount_of_service_bonus_days
+
+if "end of contract" in dep_name:
+    total_days += round(employee.amount_of_service_bonus_days)
+
+if dep_name not in ["resigned", "fired", "clause 77", "end of contract"]:
+    total_days = 0
+
+if "clause 77" in dep_name:
+    total_days = round(employee.amount_of_service_bonus_days)
+
+result = total_days
+            ]]></field>
+        </record>
+
+
+        <record id="ksa_expat_food_allowance_salary_rule" model="hr.salary.rule">
+            <field name="name">Food Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">FOODALLOW</field>
+            <field name="sequence">10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+contract_date = contract.date_start
+payslip_date = payslip.date_to
+payslip_day = payslip_date.day
+result = 0
+if contract_date.year == payslip_date.year and contract_date.month == payslip_date.month:
+    calc_day = payslip_day if payslip_day <= 30 else 30
+    working_days = (calc_day - contract_date.day) + 1
+    result = round(working_days * (contract.food_allowance / 30))
+else:
+    result = round(contract.food_allowance)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_phone_allowance_salary_rule" model="hr.salary.rule">
+            <field name="name">Phone Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">PHONEALLOW</field>
+            <field name="sequence">10</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+contract_date = contract.date_start
+payslip_date = payslip.date_to
+payslip_day = payslip_date.day
+result = 0
+if contract_date.year == payslip_date.year and contract_date.month == payslip_date.month:
+    calc_day = payslip_day if payslip_day <= 30 else 30
+    working_days = (calc_day - contract_date.day) + 1
+    result = round(working_days * (contract.phone_allowance / 30))
+else:
+    result = round(contract.phone_allowance)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_vacation_balance_rule" model="hr.salary.rule">
+            <field name="name">Annual Vacation Balance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">VACBAL</field>
+            <field name="sequence">99</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+day_price = contract.total_salary / 30
+result = round(contract.employee_id.amount_of_net_days)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_late_in_deduction" model="hr.salary.rule">
+            <field name="name">Late In Deduction</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">LATE_IN</field>
+            <field name="sequence">60</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+day_val = contract.wage / 30
+late = 0.0
+late_now = 0.0
+for line in employee.attend_ids:
+    if str(payslip.date_from.month) == str(line.month):
+        if line.is_late_in_now:
+            late_now += line.late_in_now
+        else:
+            late += line.deduct_in
+result = -((late * day_val) + late_now)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_early_out_deduction" model="hr.salary.rule">
+            <field name="name">Early Out Deduction</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">EARLY_OUT</field>
+            <field name="sequence">61</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+day_val = contract.wage / 30
+early = 0.0
+late_now = 0.0
+for line in employee.attend_ids:
+    if str(payslip.date_from.month) == str(line.month):
+        if line.is_late_out_now:
+            late_now += line.late_out_now
+        else:
+            early += line.deduct_out
+result = -((early * day_val) + late_now)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_normal_absence_deduction" model="hr.salary.rule">
+            <field name="name">Normal Absence Deduction</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">ABS_NORM</field>
+            <field name="sequence">62</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+day_val = contract.wage / 30
+absence_count = 0
+if payslip.date_from and payslip.date_to:
+    for line in employee.attend_ids:
+        if line.date and payslip.date_from <= line.date <= payslip.date_to and line.state_emp == 'absence' and not line.is_absence:
+            absence_count += 1
+result = (absence_count * day_val) * (-1)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_penalty_absence_deduction" model="hr.salary.rule">
+            <field name="name">Penalty Absence Deduction</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">ABS_PEN</field>
+            <field name="sequence">63</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+day_val = contract.wage / 30
+absence_val = 0.0
+if payslip.date_from and payslip.date_to:
+    for line in employee.attend_ids:
+        if line.date and payslip.date_from <= line.date <= payslip.date_to and line.is_absence:
+            absence_val += line.absence_deduct
+result = (absence_val) * day_val * (-1)
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_custom_overtime" model="hr.salary.rule">
+            <field name="name">Custom Overtime</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">OT_CUSTOM</field>
+            <field name="sequence">20</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+result = payslip.amount_of_overtime
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+        <record id="ksa_expat_custom_absences" model="hr.salary.rule">
+            <field name="name">General Absences</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">ABS_GEN</field>
+            <field name="sequence">70</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute"><![CDATA[
+result = -payslip.amount_of_absences
+            ]]></field>
+            <field name="struct_id" ref="l10n_sa_hr_payroll.ksa_expat_employee_payroll_structure"/>
+        </record>
+
+    </data>
+</odoo>
