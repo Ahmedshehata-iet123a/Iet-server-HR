@@ -129,7 +129,8 @@ class HRApi(http.Controller):
         try:
             args = request.httprequest.data.decode()
             vals = json.loads(args)
-            if not all(k in vals.keys() for k in ['holiday_status_id', 'request_date_from', 'request_date_to', 'employee_id']):
+            if not all(k in vals.keys() for k in
+                       ['holiday_status_id', 'request_date_from', 'request_date_to', 'employee_id']):
                 return invalid_response(message="Missing required fields for time off creation.", status=400)
             # Ensure employee_id is a valid ID
             employee_id = request.env['hr.employee'].sudo().browse(int(vals.get('employee_id')))
@@ -187,7 +188,6 @@ class HRApi(http.Controller):
             )
         except Exception as error:
             return invalid_response(message=str(error), status=500)
-
 
     @http.route("/api/hr.leave.allocation/search", type="http", methods=["GET"], auth="public", csrf=False)
     def get_time_off_types_allocation(self, **kwargs):
@@ -363,7 +363,8 @@ class HRApi(http.Controller):
                     'id': salary_advance.id,
                     'name': salary_advance.name,
                     'date': salary_advance.date.strftime('%Y-%m-%d') if salary_advance.date else None,
-                    'deduction_date': salary_advance.deduction_date.strftime('%Y-%m-%d') if salary_advance.deduction_date else None,
+                    'deduction_date': salary_advance.deduction_date.strftime(
+                        '%Y-%m-%d') if salary_advance.deduction_date else None,
                     'amount': salary_advance.amount,
                     'reason': salary_advance.reason,
                     'state': salary_advance.state,
@@ -394,7 +395,8 @@ class HRApi(http.Controller):
         except Exception as error:
             return invalid_response(message=str(error), status=500)
 
-    @http.route("/api/salary.advance/<int:salary_advance_id>", type="http", methods=["DELETE"], auth="public", csrf=False)
+    @http.route("/api/salary.advance/<int:salary_advance_id>", type="http", methods=["DELETE"], auth="public",
+                csrf=False)
     def delete_salary_advance(self, loan_id, **kwargs):
         try:
             loan = request.env['salary.advance'].sudo().browse(loan_id)
@@ -416,7 +418,14 @@ class HRApi(http.Controller):
             if not all(k in vals.keys() for k in
                        ['employee_id', 'flight_date', 'trip_type', 'flight_ticket_cost', 'number_of_tickets']):
                 return invalid_response(message="Missing required fields for ticket creation.", status=400)
-
+            employee = request.env['hr.employee'].sudo().search([('id', '=', int(vals['employee_id']))])
+            contract_number_of_tickets = 0
+            if employee.contract_id and employee.contract_id.number_of_tickets:
+                contract_number_of_tickets = employee.contract_id.number_of_tickets
+            if int(vals['number_of_tickets']) > contract_number_of_tickets:
+                return invalid_response(
+                    message="The Number Of Tickets Must Be Less Than Or Equal Number Of Tickets In Contract.",
+                    status=400)
             ticket = request.env['flight.tickets'].sudo().create(vals)
             return valid_response(
                 message=f"Ticket created successfully. ID: {ticket.id}",
@@ -490,7 +499,6 @@ class HRApi(http.Controller):
         except Exception as error:
             return invalid_response(message=str(error), status=500)
 
-
     # Resignation
     @http.route("/api/hr.departure.reason/search", type="http", methods=["GET"], auth="public", csrf=False)
     def get_departure_reasons(self, **kwargs):
@@ -509,7 +517,6 @@ class HRApi(http.Controller):
                 result=result)
         except Exception as error:
             return invalid_response(message=str(error), status=500)
-
 
     @http.route("/api/hr.resignation/create", type="http", methods=["POST"], auth="public", csrf=False)
     def create_resignation(self, **kwargs):
@@ -555,7 +562,8 @@ class HRApi(http.Controller):
                         'name': resignation.hr_departure_id.name,
                     },
                     'departure_reason': resignation.departure_reason,
-                    'contract_date_end': resignation.contract_date_end.strftime('%Y-%m-%d') if resignation.contract_date_end else None,
+                    'contract_date_end': resignation.contract_date_end.strftime(
+                        '%Y-%m-%d') if resignation.contract_date_end else None,
                     'state': resignation.state,
                 })
             return valid_response(
@@ -595,6 +603,83 @@ class HRApi(http.Controller):
         except Exception as error:
             return invalid_response(message=str(error), status=500)
 
+    # ==========================================================================
+    # Model: return.vacation
+    # ==========================================================================
+
+    @http.route("/api/return.vacation/create", type="http", methods=["POST"], auth="public", csrf=False)
+    def create_return_vacation(self, **kwargs):
+        try:
+            args = request.httprequest.data.decode()
+            vals = json.loads(args)
+            if not all(k in vals.keys() for k in
+                       ['employee_id']):
+                return invalid_response(message="Missing required fields for Return Vacation creation.", status=400)
+
+            new_record = request.env['return.vacation'].sudo().create(vals)
+            return valid_response(
+                message=f"Return From Vacation record created successfully. ID: {new_record.id}",
+                result={'create_id': new_record.id}
+            )
+        except Exception as error:
+            return invalid_response(message=str(error), status=500)
+
+    @http.route("/api/return.vacation/search", type="http", methods=["GET"], auth="public", csrf=False)
+    def get_return_vacation(self, **kwargs):
+        try:
+            domain = ast.literal_eval(kwargs.get('domain', '[]'))
+            records = request.env['return.vacation'].sudo().search(domain)
+            if not records:
+                return invalid_response(message='No Return From Vacation records found.', status=200)
+
+            result = []
+            for rec in records:
+                result.append({
+                    'id': rec.id,
+                    'state': getattr(rec, 'state', None),
+                    'employee_id': rec.employee_id.id if hasattr(rec, 'employee_id') and rec.employee_id else None,
+                    'leave_id': rec.leave_id.id if hasattr(rec, 'leave_id') and rec.leave_id else None,
+                    'return_date': rec.return_date.strftime('%Y-%m-%d') if hasattr(rec,
+                                                                                   'return_date') and rec.return_date else None,
+                    'description': getattr(rec, 'description', None),
+                })
+            return valid_response(
+                message=f"Data retrieved successfully. Total Records: {len(result)}",
+                result=result)
+        except Exception as error:
+            return invalid_response(message=str(error), status=500)
+
+    @http.route("/api/return.vacation/<int:record_id>", type="http", methods=["PUT"], auth="public", csrf=False)
+    def update_return_vacation(self, record_id, **kwargs):
+        try:
+            record = request.env['return.vacation'].sudo().browse(record_id)
+            if not record.exists():
+                return invalid_response(message="Record not found.", status=404)
+
+            args = request.httprequest.data.decode()
+            vals = json.loads(args)
+            if not vals:
+                return invalid_response(message="No data provided for update.", status=400)
+
+            record.sudo().write(vals)
+            return valid_response(
+                message=f"Record with ID {record_id} updated successfully.",
+                result={'write_id': record.id}
+            )
+        except Exception as error:
+            return invalid_response(message=str(error), status=500)
+
+    @http.route("/api/return.vacation/<int:record_id>", type="http", methods=["DELETE"], auth="public", csrf=False)
+    def delete_return_vacation(self, record_id, **kwargs):
+        try:
+            record = request.env['return.vacation'].sudo().browse(record_id)
+            if not record.exists():
+                return invalid_response(message="Record not found.", status=404)
+
+            record.sudo().unlink()
+            return valid_response(message=f"Record with ID {record_id} deleted successfully.")
+        except Exception as error:
+            return invalid_response(message=str(error), status=500)
 
     # # Employee Trip
     # @http.route("/api/business.trip/create", type="http", methods=["POST"], auth="public", csrf=False)
