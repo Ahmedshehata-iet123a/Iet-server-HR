@@ -4,7 +4,7 @@
     "category": "Human Resources",
     "summary": "API Endpoints for HR Management",
     "author": "Mohammed Abd Elkhalek",
-    "depends": ["iet_hr_end_of_service", "iet_hr_loans_and_advances"],
+    "depends": ["iet_hr_end_of_service", "iet_hr_loans_and_advances", "mobikul_odoo_attendance"],
     "data": [
         # "security/ir.model.access.csv"
     ],
