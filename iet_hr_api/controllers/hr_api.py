@@ -22,31 +22,31 @@ class HRApi(MobikulAttendanceAPI):
 
         return user, None
 
-    # @http.route('/v2/mobikul/odoo_attendance/profile', type='http', auth="none", methods=['GET'])
-    # def profile(self):
-    #     response = super(HRApi, self).profile()
-    #
-    #     response_data = json.loads(response.data.decode('utf-8'))
-    #
-    #     if response_data.get('success'):
-    #         user, error_resp = self._get_authenticated_user()
-    #         if not error_resp and user and user.employee_id:
-    #             employee = user.employee_id.sudo()
-    #
-    #             extra_data = {
-    #                 "number_of_tickets": employee.contract_id.number_of_tickets if employee.contract_id else 0,
-    #                 "leave_days_balance": getattr(employee, 'leave_days_balance', 0.0),
-    #                 "leave_days_taken": getattr(employee, 'leave_days_taken', 0.0),
-    #                 "leave_net_days": getattr(employee, 'net_days', 0.0),
-    #                 "leave_days_policy": getattr(employee, 'leave_policy', ""),
-    #             }
-    #
-    #             if 'employeeDetails' in response_data:
-    #                 response_data['employeeDetails'].update(extra_data)
-    #             else:
-    #                 response_data['employeeDetails'] = extra_data
-    #
-    #     return self._response('Profile', response_data)
+    @http.route('/v2/mobikul/odoo_attendance/profile', type='http', auth="none", methods=['GET'])
+    def profile(self):
+        response = super(HRApi, self).profile()
+
+        response_data = json.loads(response.data.decode('utf-8'))
+
+        if response_data.get('success'):
+            user, error_resp = self._get_authenticated_user()
+            if not error_resp and user and user.employee_id:
+                employee = user.employee_id.sudo()
+
+                extra_data = {
+                    "number_of_tickets": employee.contract_id.number_of_tickets if employee.contract_id else 0,
+                    "leave_days_balance": getattr(employee, 'leave_days_balance', 0.0),
+                    "leave_days_taken": getattr(employee, 'leave_days_taken', 0.0),
+                    "leave_net_days": getattr(employee, 'net_days', 0.0),
+                    "leave_days_policy": getattr(employee, 'leave_policy', ""),
+                }
+
+                if 'employeeDetails' in response_data:
+                    response_data['employeeDetails'].update(extra_data)
+                else:
+                    response_data['employeeDetails'] = extra_data
+
+        return self._response('Profile', response_data)
 
     @http.route("/api/hr.leave.type/search", type="http", methods=["GET"], auth="public", csrf=False)
     def get_time_off_types(self, **kwargs):
